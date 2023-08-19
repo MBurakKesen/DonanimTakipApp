@@ -8,17 +8,18 @@ using System.Windows.Forms;
 
 namespace ConsoleUI
 {
-    public partial class HyteraEnvanter : Form
+    public partial class UrovoEnvanterYaziciEkleme : Form
     {
-        public HyteraEnvanter()
+        public UrovoEnvanterYaziciEkleme()
         {
             InitializeComponent();
         }
 
-        private void geriDon_Click(object sender, EventArgs e)
+        private void UrovoEnvanterYaziciEklemeBtn_Click(object sender, EventArgs e)
         {
-            Anasayfa anasayfa= new Anasayfa();
-            anasayfa.Show();
+            //
+            //
+            //
             this.Close();
         }
     }

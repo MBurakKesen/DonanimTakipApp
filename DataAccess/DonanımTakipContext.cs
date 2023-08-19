@@ -16,6 +16,7 @@ namespace DataAccess
         }
 
         DbSet<Hardware> Hardwares { get; set; } 
+        DbSet<HyteraPerson> HyteraPersons { get; set;}
        
     }
 }

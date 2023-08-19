@@ -6,11 +6,11 @@ using System.Threading.Tasks;
 
 namespace Entity.Models
 {
-    public class Hardware
+    public class HyteraPerson
     {
         public int Id { get; set; }
         public string SeriNo { get; set; }
-        public string MarkaModel { get; set; }
-
+        public int Isim { get; set; }
+        public  string Yazici { get; set; }
     }
 }

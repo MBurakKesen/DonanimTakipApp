@@ -21,5 +21,11 @@ namespace ConsoleUI
             anasayfa.Show();
             this.Close();
         }
+
+        private void YaziciEklemeBtn_Click(object sender, EventArgs e)
+        {
+            UrovoEnvanterYaziciEkleme urovoEnvanterYaziciEkleme = new UrovoEnvanterYaziciEkleme();
+            urovoEnvanterYaziciEkleme.Show();
+        }
     }
 }
