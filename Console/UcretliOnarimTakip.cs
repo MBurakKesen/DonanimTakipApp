@@ -19,7 +19,7 @@ namespace Console
 
         private void GeriBtn_Click(object sender, EventArgs e)
         {
-            Anasayfa anasayfa= new Anasayfa();
+            Anasayfa anasayfa= new();
             anasayfa.Show();
             this.Close();
         }

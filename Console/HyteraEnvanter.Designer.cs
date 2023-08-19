@@ -71,7 +71,7 @@
             // 
             // EkleBtn
             // 
-            this.EkleBtn.Location = new System.Drawing.Point(658, 115);
+            this.EkleBtn.Location = new System.Drawing.Point(676, 115);
             this.EkleBtn.Name = "EkleBtn";
             this.EkleBtn.Size = new System.Drawing.Size(94, 29);
             this.EkleBtn.TabIndex = 3;
@@ -81,7 +81,7 @@
             // 
             // SilBtn
             // 
-            this.SilBtn.Location = new System.Drawing.Point(658, 246);
+            this.SilBtn.Location = new System.Drawing.Point(676, 254);
             this.SilBtn.Name = "SilBtn";
             this.SilBtn.Size = new System.Drawing.Size(94, 29);
             this.SilBtn.TabIndex = 4;
@@ -90,7 +90,7 @@
             // 
             // GuncelleBtn
             // 
-            this.GuncelleBtn.Location = new System.Drawing.Point(658, 387);
+            this.GuncelleBtn.Location = new System.Drawing.Point(676, 389);
             this.GuncelleBtn.Name = "GuncelleBtn";
             this.GuncelleBtn.Size = new System.Drawing.Size(94, 29);
             this.GuncelleBtn.TabIndex = 5;
