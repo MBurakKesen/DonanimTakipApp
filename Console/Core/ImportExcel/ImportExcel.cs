@@ -1,0 +1,122 @@
+﻿using AppBussiness;
+using Bussiness;
+using Entity.Models;
+using Microsoft.Office.Interop.Excel;
+using OfficeOpenXml;
+using System;
+using System.Collections.Generic;
+using System.Data;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace Console.Core.ImportExcel
+{
+    public class ImportExcel
+    {
+        public static List<HyteraPerson> readExcel()
+        {
+            string s = null;
+            OpenFileDialog file = new OpenFileDialog();
+            if (file.ShowDialog() == DialogResult.OK)
+            {
+                var HyteraPersonList = new List<HyteraPerson>();
+
+                var fileName = file.FileName;
+
+                using var package = new ExcelPackage(fileName);
+                ExcelPackage.LicenseContext = LicenseContext.NonCommercial;
+                var currentSheet = package.Workbook.Worksheets;
+                var workSheet = currentSheet.First();
+                var noOfCol = workSheet.Dimension.End.Column;
+                var noOfRow = workSheet.Dimension.End.Row;
+
+                for (int rowIterator = 2; rowIterator <= noOfRow; rowIterator++)
+                {
+                    if (workSheet.Cells[rowIterator, 1].Value?.ToString() is null)
+                    {
+                        MessageBox.Show("Import successed");
+                        break;
+
+                    }
+                    var hyteraPerson = new HyteraPerson
+                    {
+                        SeriNo = workSheet.Cells[rowIterator, 1].Value?.ToString(),
+                        IsimVeSoyisim = workSheet.Cells[rowIterator, 2].Value.ToString(),
+
+                    };
+
+                    HyteraPersonList.Add(hyteraPerson);
+                }
+
+
+
+
+                return HyteraPersonList;
+            }
+
+            return null;
+        }
+        public static List<Yazici> readExcelForYazici()
+        {
+            string s = null;
+            OpenFileDialog file = new OpenFileDialog();
+            if (file.ShowDialog() == DialogResult.OK)
+            {
+                var YaziciPersonList = new List<Yazici>();
+
+                var fileName = file.FileName;
+
+                using var package = new ExcelPackage(fileName);
+                ExcelPackage.LicenseContext = LicenseContext.NonCommercial;
+                var currentSheet = package.Workbook.Worksheets;
+                var workSheet = currentSheet.First();
+                var noOfCol = workSheet.Dimension.End.Column;
+                var noOfRow = workSheet.Dimension.End.Row;
+
+                for (int rowIterator = 2; rowIterator <= noOfRow; rowIterator++)
+                {
+                    if (workSheet.Cells[rowIterator, 1].Value?.ToString() is null)
+                    {
+                        MessageBox.Show("Import Başarılı");
+                        break;
+
+                    }
+                    DateTime myDateTime = DateTime.Now;
+                    string sqlFormattedDate = myDateTime.ToString("yyyy-MM-dd HH:mm:ss.fff");
+                    var yazici = new Yazici
+                    {
+                        Marka = workSheet.Cells[rowIterator, 2].Value?.ToString(),
+                        Model = workSheet.Cells[rowIterator, 3].Value.ToString(),
+                        TeslimTarih = Convert.ToDateTime(workSheet.Cells[rowIterator, 4].Value.ToString()),
+                        SeriNumarasi= workSheet.Cells[rowIterator, 5].Value.ToString(),                       
+                    };
+
+                    YaziciPersonList.Add(yazici);
+                }
+
+                return YaziciPersonList;
+            }
+            return null;
+            
+        }
+        public static void AddDB(List<HyteraPerson> hyteraPersons)
+        {
+            HyteraPersonManager manager = new(new());
+            foreach (var item in hyteraPersons)
+            {
+                manager.Add(item);
+            }
+        }
+        public static void AddYaziciDB(List<Yazici> yazicies)
+        {
+
+            YaziciManager manager = new(new());
+            foreach (var item in yazicies)
+            {
+                manager.Add(item);
+            }
+        }
+
+    }
+}

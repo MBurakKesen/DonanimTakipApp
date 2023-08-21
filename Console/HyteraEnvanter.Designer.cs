@@ -34,18 +34,16 @@
             this.EkleBtn = new System.Windows.Forms.Button();
             this.SilBtn = new System.Windows.Forms.Button();
             this.GuncelleBtn = new System.Windows.Forms.Button();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.SeriNo = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.IsimVeSoyisim = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Yazici = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            this.HyteraEnvanterView = new System.Windows.Forms.DataGridView();
+            ((System.ComponentModel.ISupportInitialize)(this.HyteraEnvanterView)).BeginInit();
             this.SuspendLayout();
             // 
             // GeriBtn
             // 
+            this.GeriBtn.AutoSize = true;
             this.GeriBtn.Location = new System.Drawing.Point(12, 12);
             this.GeriBtn.Name = "GeriBtn";
-            this.GeriBtn.Size = new System.Drawing.Size(94, 29);
+            this.GeriBtn.Size = new System.Drawing.Size(50, 30);
             this.GeriBtn.TabIndex = 0;
             this.GeriBtn.Text = "GERİ";
             this.GeriBtn.UseVisualStyleBackColor = true;
@@ -59,19 +57,22 @@
             this.ImportBtn.TabIndex = 1;
             this.ImportBtn.Text = "Import";
             this.ImportBtn.UseVisualStyleBackColor = true;
+            this.ImportBtn.Click += new System.EventHandler(this.ImportBtn_Click);
             // 
             // DisaAktarBtn
             // 
-            this.DisaAktarBtn.Location = new System.Drawing.Point(473, 54);
+            this.DisaAktarBtn.Location = new System.Drawing.Point(562, 54);
             this.DisaAktarBtn.Name = "DisaAktarBtn";
             this.DisaAktarBtn.Size = new System.Drawing.Size(94, 29);
             this.DisaAktarBtn.TabIndex = 2;
             this.DisaAktarBtn.Text = "Dışa Aktar";
             this.DisaAktarBtn.UseVisualStyleBackColor = true;
+            this.DisaAktarBtn.Click += new System.EventHandler(this.DisaAktarBtn_Click);
             // 
             // EkleBtn
             // 
-            this.EkleBtn.Location = new System.Drawing.Point(676, 115);
+            this.EkleBtn.Anchor = System.Windows.Forms.AnchorStyles.Right;
+            this.EkleBtn.Location = new System.Drawing.Point(734, 122);
             this.EkleBtn.Name = "EkleBtn";
             this.EkleBtn.Size = new System.Drawing.Size(94, 29);
             this.EkleBtn.TabIndex = 3;
@@ -81,63 +82,46 @@
             // 
             // SilBtn
             // 
-            this.SilBtn.Location = new System.Drawing.Point(676, 254);
+            this.SilBtn.Anchor = System.Windows.Forms.AnchorStyles.Right;
+            this.SilBtn.Location = new System.Drawing.Point(734, 261);
             this.SilBtn.Name = "SilBtn";
             this.SilBtn.Size = new System.Drawing.Size(94, 29);
             this.SilBtn.TabIndex = 4;
             this.SilBtn.Text = "Sil";
             this.SilBtn.UseVisualStyleBackColor = true;
+            this.SilBtn.Click += new System.EventHandler(this.SilBtn_Click);
             // 
             // GuncelleBtn
             // 
-            this.GuncelleBtn.Location = new System.Drawing.Point(676, 389);
+            this.GuncelleBtn.Anchor = System.Windows.Forms.AnchorStyles.Right;
+            this.GuncelleBtn.Location = new System.Drawing.Point(734, 396);
             this.GuncelleBtn.Name = "GuncelleBtn";
             this.GuncelleBtn.Size = new System.Drawing.Size(94, 29);
             this.GuncelleBtn.TabIndex = 5;
             this.GuncelleBtn.Text = "Güncelle";
             this.GuncelleBtn.UseVisualStyleBackColor = true;
             // 
-            // dataGridView1
+            // HyteraEnvanterView
             // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.SeriNo,
-            this.IsimVeSoyisim,
-            this.Yazici});
-            this.dataGridView1.Location = new System.Drawing.Point(31, 115);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.RowHeadersWidth = 51;
-            this.dataGridView1.RowTemplate.Height = 29;
-            this.dataGridView1.Size = new System.Drawing.Size(621, 358);
-            this.dataGridView1.TabIndex = 7;
-            // 
-            // SeriNo
-            // 
-            this.SeriNo.HeaderText = "Seri No";
-            this.SeriNo.MinimumWidth = 6;
-            this.SeriNo.Name = "SeriNo";
-            this.SeriNo.Width = 200;
-            // 
-            // IsimVeSoyisim
-            // 
-            this.IsimVeSoyisim.HeaderText = "İsim ve Soyisim";
-            this.IsimVeSoyisim.MinimumWidth = 6;
-            this.IsimVeSoyisim.Name = "IsimVeSoyisim";
-            this.IsimVeSoyisim.Width = 200;
-            // 
-            // Yazici
-            // 
-            this.Yazici.HeaderText = "Yazıcı";
-            this.Yazici.MinimumWidth = 6;
-            this.Yazici.Name = "Yazici";
-            this.Yazici.Width = 200;
+            this.HyteraEnvanterView.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.HyteraEnvanterView.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.HyteraEnvanterView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.HyteraEnvanterView.Location = new System.Drawing.Point(31, 115);
+            this.HyteraEnvanterView.Name = "HyteraEnvanterView";
+            this.HyteraEnvanterView.RowHeadersWidth = 51;
+            this.HyteraEnvanterView.RowTemplate.Height = 29;
+            this.HyteraEnvanterView.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.HyteraEnvanterView.Size = new System.Drawing.Size(679, 386);
+            this.HyteraEnvanterView.TabIndex = 7;
             // 
             // HyteraEnvanter
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(809, 485);
-            this.Controls.Add(this.dataGridView1);
+            this.ClientSize = new System.Drawing.Size(873, 548);
+            this.Controls.Add(this.HyteraEnvanterView);
             this.Controls.Add(this.GuncelleBtn);
             this.Controls.Add(this.SilBtn);
             this.Controls.Add(this.EkleBtn);
@@ -147,8 +131,9 @@
             this.Name = "HyteraEnvanter";
             this.Text = "HyteraEnvanter";
             this.Load += new System.EventHandler(this.HyteraEnvanter_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.HyteraEnvanterView)).EndInit();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -160,9 +145,6 @@
         private Button EkleBtn;
         private Button SilBtn;
         private Button GuncelleBtn;
-        private DataGridView dataGridView1;
-        private DataGridViewTextBoxColumn SeriNo;
-        private DataGridViewTextBoxColumn IsimVeSoyisim;
-        private DataGridViewTextBoxColumn Yazici;
+        private DataGridView HyteraEnvanterView;
     }
 }

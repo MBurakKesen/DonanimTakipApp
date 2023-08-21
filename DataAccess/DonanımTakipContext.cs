@@ -12,11 +12,12 @@ namespace DataAccess
     {
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
-            optionsBuilder.UseSqlServer(@"Server=(localdb)\mssqllocaldb;Database=DonanimTakipApp;Trusted_Connection=true");
+            optionsBuilder.UseSqlServer(@"Server=LAPTOP-RE5ASPI1\SQLEXPRESS;Database=DonanimTakipApp;TrustServerCertificate=True;Trusted_Connection=True");
         }
 
-        DbSet<Hardware> Hardwares { get; set; } 
         DbSet<HyteraPerson> HyteraPersons { get; set;}
+        DbSet<Yazici> Yazicies
+        { get; set;}
        
     }
 }
