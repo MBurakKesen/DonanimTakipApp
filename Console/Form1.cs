@@ -48,5 +48,11 @@ namespace Console
             yaziciVeSeriNumara.Show();
             this.Hide();
         }
+
+        private void AnasayfaLbl_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("Geliştirici: Muhammed Burak Kesen \n" +
+                "Sürüm: 1.0.0 Beta");
+        }
     }
 }

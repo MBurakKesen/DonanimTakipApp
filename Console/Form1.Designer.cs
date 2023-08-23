@@ -63,7 +63,7 @@
             // 
             this.UrovoGarantiTakipBtn.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left)));
-            this.UrovoGarantiTakipBtn.Location = new System.Drawing.Point(21, 192);
+            this.UrovoGarantiTakipBtn.Location = new System.Drawing.Point(21, 183);
             this.UrovoGarantiTakipBtn.Name = "UrovoGarantiTakipBtn";
             this.UrovoGarantiTakipBtn.Size = new System.Drawing.Size(215, 97);
             this.UrovoGarantiTakipBtn.TabIndex = 3;
@@ -75,7 +75,7 @@
             // 
             this.YaziciSeriNoBtn.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.YaziciSeriNoBtn.Location = new System.Drawing.Point(362, 192);
+            this.YaziciSeriNoBtn.Location = new System.Drawing.Point(362, 183);
             this.YaziciSeriNoBtn.Name = "YaziciSeriNoBtn";
             this.YaziciSeriNoBtn.Size = new System.Drawing.Size(215, 97);
             this.YaziciSeriNoBtn.TabIndex = 4;
@@ -87,11 +87,12 @@
             // 
             this.AnasayfaLbl.AutoSize = true;
             this.AnasayfaLbl.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.AnasayfaLbl.Location = new System.Drawing.Point(595, 427);
+            this.AnasayfaLbl.Location = new System.Drawing.Point(623, 420);
             this.AnasayfaLbl.Name = "AnasayfaLbl";
             this.AnasayfaLbl.Size = new System.Drawing.Size(198, 28);
             this.AnasayfaLbl.TabIndex = 6;
             this.AnasayfaLbl.Text = "Developed by Stajyer";
+            this.AnasayfaLbl.Click += new System.EventHandler(this.AnasayfaLbl_Click);
             // 
             // YaziciVeSeriNumaraBtn
             // 

@@ -29,23 +29,33 @@
         private void InitializeComponent()
         {
             this.QrPic = new System.Windows.Forms.PictureBox();
+            this.qrPrint = new System.Drawing.Printing.PrintDocument();
             ((System.ComponentModel.ISupportInitialize)(this.QrPic)).BeginInit();
             this.SuspendLayout();
             // 
             // QrPic
             // 
-            this.QrPic.Location = new System.Drawing.Point(147, 51);
+            this.QrPic.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.QrPic.Location = new System.Drawing.Point(128, 171);
             this.QrPic.Name = "QrPic";
-            this.QrPic.Size = new System.Drawing.Size(491, 357);
+            this.QrPic.Size = new System.Drawing.Size(463, 400);
+            this.QrPic.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
             this.QrPic.TabIndex = 0;
             this.QrPic.TabStop = false;
             this.QrPic.Click += new System.EventHandler(this.QrPic_Click);
+            // 
+            // qrPrint
+            // 
+            //this.qrPrint.PrintPage += new System.Drawing.Printing.PrintPageEventHandler(this.printDocument1_PrintPage);
             // 
             // QRScreen
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.AutoSize = true;
+            this.ClientSize = new System.Drawing.Size(782, 753);
             this.Controls.Add(this.QrPic);
             this.Name = "QRScreen";
             this.Text = "QRScreen";
@@ -58,5 +68,6 @@
         #endregion
 
         private PictureBox QrPic;
+        private System.Drawing.Printing.PrintDocument qrPrint;
     }
 }

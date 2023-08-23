@@ -40,9 +40,9 @@
             // 
             // GeriBtn
             // 
-            this.GeriBtn.Location = new System.Drawing.Point(31, 3);
+            this.GeriBtn.Location = new System.Drawing.Point(12, 12);
             this.GeriBtn.Name = "GeriBtn";
-            this.GeriBtn.Size = new System.Drawing.Size(94, 29);
+            this.GeriBtn.Size = new System.Drawing.Size(65, 29);
             this.GeriBtn.TabIndex = 1;
             this.GeriBtn.Text = "GERİ";
             this.GeriBtn.UseVisualStyleBackColor = true;
@@ -81,7 +81,7 @@
             // IceriAktarBtn
             // 
             this.IceriAktarBtn.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.IceriAktarBtn.Location = new System.Drawing.Point(407, 3);
+            this.IceriAktarBtn.Location = new System.Drawing.Point(420, 12);
             this.IceriAktarBtn.Name = "IceriAktarBtn";
             this.IceriAktarBtn.Size = new System.Drawing.Size(99, 29);
             this.IceriAktarBtn.TabIndex = 5;
@@ -92,7 +92,7 @@
             // DısarıAktarBtn
             // 
             this.DısarıAktarBtn.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.DısarıAktarBtn.Location = new System.Drawing.Point(585, 3);
+            this.DısarıAktarBtn.Location = new System.Drawing.Point(588, 12);
             this.DısarıAktarBtn.Name = "DısarıAktarBtn";
             this.DısarıAktarBtn.Size = new System.Drawing.Size(97, 29);
             this.DısarıAktarBtn.TabIndex = 6;

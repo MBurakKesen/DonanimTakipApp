@@ -116,7 +116,7 @@ namespace Console
             foreach (DataGridViewRow item in this.HyteraEnvanterView.SelectedRows)
             {
                 hyteraDto.SeriNo = item.Cells[0].Value.ToString();
-                hyteraDto.IsimVeSoyisim = item.Cells[1].Value.ToString();
+                //hyteraDto.IsimVeSoyisim = item.Cells[1].Value.ToString();
                 hyteraDto.Yazici = item.Cells[2].Value.ToString();
                 
             }
