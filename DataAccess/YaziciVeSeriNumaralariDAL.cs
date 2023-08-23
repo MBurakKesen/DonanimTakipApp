@@ -9,54 +9,49 @@ using System.Threading.Tasks;
 
 namespace DataAccess
 {
-    public class HardwareDAL
+    public class YaziciVeSeriNumaralariDAL
     {
-        public void Add(Hardware entity)
+        public void Add(YaziciVeSeriNumaralari yaziciVeSeriNumaralari)
         {
-            using (DonanımTakipContext context = new DonanımTakipContext())
+            using (DonanımTakipContext context = new())
             {
-                var added = context.Entry(entity);
+                var added = context.Entry(yaziciVeSeriNumaralari);
                 added.State = EntityState.Added;
                 context.SaveChanges();
             }
         }
-
-        public void Delete(Hardware entity)
+        public void Delete(YaziciVeSeriNumaralari yaziciVeSeriNumaralari)
         {
             using (DonanımTakipContext context = new DonanımTakipContext())
             {
-                var deleted = context.Entry(entity);
+                var deleted = context.Entry(yaziciVeSeriNumaralari);
                 deleted.State = EntityState.Deleted;
                 context.SaveChanges();
             }
-        }
 
-        public Hardware Get(Expression<Func<Hardware, bool>> filter)
+        }
+        public YaziciVeSeriNumaralari Get(Expression<Func<YaziciVeSeriNumaralari, bool>> filter)
         {
             using (DonanımTakipContext context = new DonanımTakipContext())
             {
-                return context.Set<Hardware>().SingleOrDefault(filter);
+                return context.Set<YaziciVeSeriNumaralari>().SingleOrDefault(filter);
                 context.SaveChanges();
 
             }
         }
-
-        public List<Hardware> GetAll(Expression<Func<Hardware, bool>> filter = null)
+        public List<YaziciVeSeriNumaralari> GetAll(Expression<Func<YaziciVeSeriNumaralari, bool>> filter = null)
         {
             using (DonanımTakipContext context = new DonanımTakipContext())
             {
-                return filter == null ? context.Set<Hardware>().ToList() : context.Set<Hardware>().Where(filter).ToList();
+                return filter == null ? context.Set<YaziciVeSeriNumaralari>().ToList() : context.Set<YaziciVeSeriNumaralari>().Where(filter).ToList();
                 context.SaveChanges();
             }
         }
-
-
-
-        public void Update(Hardware entity)
+        public void Update(YaziciVeSeriNumaralari yaziciVeSeriNumaralari)
         {
             using (DonanımTakipContext context = new DonanımTakipContext())
             {
-                var updated = context.Entry(entity);
+                var updated = context.Entry(yaziciVeSeriNumaralari);
                 updated.State = EntityState.Modified;
                 context.SaveChanges();
             }

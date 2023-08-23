@@ -13,12 +13,6 @@ namespace Console
         {
         }
 
-        private void UrovoEnvanterBtn_Click(object sender, EventArgs e)
-        {
-            UrovoEnvanter urovoEnvanter = new();
-            urovoEnvanter.Show();
-            this.Hide();
-        }
 
         private void UrovoOnarimTakipBtn_Click(object sender, EventArgs e)
         {
@@ -43,8 +37,15 @@ namespace Console
 
         private void YaziciSeriNoBtn_Click(object sender, EventArgs e)
         {
-            YaziciVeSeriNumaralari yaziciVeSeriNumaralari = new YaziciVeSeriNumaralari();
-            yaziciVeSeriNumaralari.Show();
+            UrovoEnvanter urovoEnvanter = new ();
+            urovoEnvanter.Show();
+            this.Hide();
+        }
+
+        private void YaziciVeSeriNumaraBtn_Click(object sender, EventArgs e)
+        {
+            YaziciVeSeriNumara yaziciVeSeriNumara = new();
+            yaziciVeSeriNumara.Show();
             this.Hide();
         }
     }

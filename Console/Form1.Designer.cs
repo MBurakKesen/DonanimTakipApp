@@ -28,25 +28,13 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.UrovoEnvanterBtn = new System.Windows.Forms.Button();
             this.UrovoOnarimTakipBtn = new System.Windows.Forms.Button();
             this.HyteraEnvanterBtn = new System.Windows.Forms.Button();
             this.UrovoGarantiTakipBtn = new System.Windows.Forms.Button();
             this.YaziciSeriNoBtn = new System.Windows.Forms.Button();
             this.AnasayfaLbl = new System.Windows.Forms.Label();
+            this.YaziciVeSeriNumaraBtn = new System.Windows.Forms.Button();
             this.SuspendLayout();
-            // 
-            // UrovoEnvanterBtn
-            // 
-            this.UrovoEnvanterBtn.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.UrovoEnvanterBtn.AutoSize = true;
-            this.UrovoEnvanterBtn.Location = new System.Drawing.Point(21, 304);
-            this.UrovoEnvanterBtn.Name = "UrovoEnvanterBtn";
-            this.UrovoEnvanterBtn.Size = new System.Drawing.Size(215, 97);
-            this.UrovoEnvanterBtn.TabIndex = 0;
-            this.UrovoEnvanterBtn.Text = "Yazıcı ve Seri Numaraları";
-            this.UrovoEnvanterBtn.UseVisualStyleBackColor = true;
-            this.UrovoEnvanterBtn.Click += new System.EventHandler(this.UrovoEnvanterBtn_Click);
             // 
             // UrovoOnarimTakipBtn
             // 
@@ -75,7 +63,7 @@
             // 
             this.UrovoGarantiTakipBtn.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left)));
-            this.UrovoGarantiTakipBtn.Location = new System.Drawing.Point(21, 167);
+            this.UrovoGarantiTakipBtn.Location = new System.Drawing.Point(21, 192);
             this.UrovoGarantiTakipBtn.Name = "UrovoGarantiTakipBtn";
             this.UrovoGarantiTakipBtn.Size = new System.Drawing.Size(215, 97);
             this.UrovoGarantiTakipBtn.TabIndex = 3;
@@ -87,7 +75,7 @@
             // 
             this.YaziciSeriNoBtn.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.YaziciSeriNoBtn.Location = new System.Drawing.Point(362, 167);
+            this.YaziciSeriNoBtn.Location = new System.Drawing.Point(362, 192);
             this.YaziciSeriNoBtn.Name = "YaziciSeriNoBtn";
             this.YaziciSeriNoBtn.Size = new System.Drawing.Size(215, 97);
             this.YaziciSeriNoBtn.TabIndex = 4;
@@ -105,15 +93,25 @@
             this.AnasayfaLbl.TabIndex = 6;
             this.AnasayfaLbl.Text = "Developed by Stajyer";
             // 
+            // YaziciVeSeriNumaraBtn
+            // 
+            this.YaziciVeSeriNumaraBtn.Location = new System.Drawing.Point(21, 329);
+            this.YaziciVeSeriNumaraBtn.Name = "YaziciVeSeriNumaraBtn";
+            this.YaziciVeSeriNumaraBtn.Size = new System.Drawing.Size(215, 97);
+            this.YaziciVeSeriNumaraBtn.TabIndex = 7;
+            this.YaziciVeSeriNumaraBtn.Text = "Yazici Ve Numaralari";
+            this.YaziciVeSeriNumaraBtn.UseVisualStyleBackColor = true;
+            this.YaziciVeSeriNumaraBtn.Click += new System.EventHandler(this.YaziciVeSeriNumaraBtn_Click);
+            // 
             // Anasayfa
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(846, 473);
+            this.Controls.Add(this.YaziciVeSeriNumaraBtn);
             this.Controls.Add(this.YaziciSeriNoBtn);
             this.Controls.Add(this.AnasayfaLbl);
             this.Controls.Add(this.HyteraEnvanterBtn);
-            this.Controls.Add(this.UrovoEnvanterBtn);
             this.Controls.Add(this.UrovoOnarimTakipBtn);
             this.Controls.Add(this.UrovoGarantiTakipBtn);
             this.MaximizeBox = false;
@@ -126,12 +124,11 @@
         }
 
         #endregion
-
-        private Button UrovoEnvanterBtn;
         private Button UrovoOnarimTakipBtn;
         private Button HyteraEnvanterBtn;
         private Button UrovoGarantiTakipBtn;
         private Button YaziciSeriNoBtn;
         private Label AnasayfaLbl;
+        private Button YaziciVeSeriNumaraBtn;
     }
 }

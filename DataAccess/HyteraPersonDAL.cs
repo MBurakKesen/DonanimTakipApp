@@ -1,4 +1,5 @@
-﻿using Entity.Models;
+﻿using Entity.DTO;
+using Entity.Models;
 using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
@@ -55,6 +56,25 @@ namespace DataAccess
                 updated.State = EntityState.Modified;
                 context.SaveChanges();
             }
+        }
+
+        public List<HyteraDto> GetProductDetails()
+        {
+            using (DonanımTakipContext context = new())
+            {
+                var result = from p in context.HyteraPersons
+                             join c in context.yaziciVeSeriNumaralaris
+                                 on p.IsimVeSoyisim equals c.Personel
+                                 select new HyteraDto
+                                 {
+                                     IsimVeSoyisim = p.IsimVeSoyisim,
+                                     SeriNo = p.SeriNo,
+                                     Yazici = c.Yazici,
+                                 };
+                return result.ToList();
+            }
+
+
         }
     }
 }

@@ -37,5 +37,12 @@ namespace Console
             this.Close();
             
         }
+
+        private void EkleBtn_Click(object sender, EventArgs e)
+        {
+            YaziciVeSeriNumara yaziciVeSeriNumara = new();
+            yaziciVeSeriNumara.Show();
+
+        }
     }
 }

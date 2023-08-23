@@ -1,4 +1,5 @@
 ﻿using DataAccess;
+using Entity.DTO;
 using Entity.Models;
 using System;
 using System.Collections.Generic;
@@ -31,6 +32,15 @@ namespace Bussiness
         }
         public List<HyteraPerson> GetAll(Expression<Func<HyteraPerson, bool>> filter=null) {
             return _hyteraPersonDal.GetAll(filter);
+        }
+        public void Update(HyteraPerson hyteraPerson)
+        {
+            _hyteraPersonDal.Update(hyteraPerson);
+        }
+
+        public List<HyteraDto> GetHyteraDtos()
+        {
+            return _hyteraPersonDal.GetProductDetails();
         }
     }
 }

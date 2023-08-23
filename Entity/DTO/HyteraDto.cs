@@ -4,13 +4,12 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Entity.Models
+namespace Entity.DTO
 {
-    public class Hardware
+    public class HyteraDto
     {
-        public int Id { get; set; }
         public string SeriNo { get; set; }
-        public string MarkaModel { get; set; }
-
+        public string IsimVeSoyisim { get; set; }
+        public string Yazici { get; set; }
     }
 }

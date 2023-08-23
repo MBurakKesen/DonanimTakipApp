@@ -35,6 +35,7 @@
             this.SilBtn = new System.Windows.Forms.Button();
             this.GuncelleBtn = new System.Windows.Forms.Button();
             this.HyteraEnvanterView = new System.Windows.Forms.DataGridView();
+            this.QrBtn = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.HyteraEnvanterView)).BeginInit();
             this.SuspendLayout();
             // 
@@ -100,6 +101,7 @@
             this.GuncelleBtn.TabIndex = 5;
             this.GuncelleBtn.Text = "Güncelle";
             this.GuncelleBtn.UseVisualStyleBackColor = true;
+            this.GuncelleBtn.Click += new System.EventHandler(this.GuncelleBtn_Click);
             // 
             // HyteraEnvanterView
             // 
@@ -115,12 +117,24 @@
             this.HyteraEnvanterView.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.HyteraEnvanterView.Size = new System.Drawing.Size(679, 386);
             this.HyteraEnvanterView.TabIndex = 7;
+            this.HyteraEnvanterView.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.HyteraEnvanterView_CellContentClick);
+            // 
+            // QrBtn
+            // 
+            this.QrBtn.Location = new System.Drawing.Point(744, 47);
+            this.QrBtn.Name = "QrBtn";
+            this.QrBtn.Size = new System.Drawing.Size(60, 42);
+            this.QrBtn.TabIndex = 8;
+            this.QrBtn.Text = "QR";
+            this.QrBtn.UseVisualStyleBackColor = true;
+            this.QrBtn.Click += new System.EventHandler(this.QrBtn_Click);
             // 
             // HyteraEnvanter
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(873, 548);
+            this.Controls.Add(this.QrBtn);
             this.Controls.Add(this.HyteraEnvanterView);
             this.Controls.Add(this.GuncelleBtn);
             this.Controls.Add(this.SilBtn);
@@ -146,5 +160,6 @@
         private Button SilBtn;
         private Button GuncelleBtn;
         private DataGridView HyteraEnvanterView;
+        private Button QrBtn;
     }
 }

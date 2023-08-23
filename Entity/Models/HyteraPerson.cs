@@ -8,8 +8,8 @@ namespace Entity.Models
 {
     public class HyteraPerson
     {
-        public int? Id { get; set; }
-        public string? SeriNo { get; set; }
-        public string? IsimVeSoyisim { get; set; }
+        public int Id { get; set; }
+        public string SeriNo { get; set; }
+        public string IsimVeSoyisim { get; set; }
     }
 }

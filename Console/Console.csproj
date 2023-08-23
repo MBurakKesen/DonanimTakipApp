@@ -22,6 +22,7 @@
 
   <ItemGroup>
     <PackageReference Include="EPPlus" Version="6.2.8" />
+    <PackageReference Include="QRCoder" Version="1.4.3" />
   </ItemGroup>
 
   <ItemGroup>

@@ -100,6 +100,55 @@ namespace Console.Core.ImportExcel
             return null;
             
         }
+
+        public static List<YaziciVeSeriNumaralari> readExcelForYaziciVeSeriNumaralari()
+        {
+            string s = null;
+            OpenFileDialog file = new OpenFileDialog();
+            if (file.ShowDialog() == DialogResult.OK)
+            {
+                var YaziciVeSeriNumaralariList = new List<YaziciVeSeriNumaralari>();
+
+                var fileName = file.FileName;
+
+                using var package = new ExcelPackage(fileName);
+                ExcelPackage.LicenseContext = LicenseContext.NonCommercial;
+                var currentSheet = package.Workbook.Worksheets;
+                var workSheet = currentSheet.First();
+                var noOfCol = workSheet.Dimension.End.Column;
+                var noOfRow = workSheet.Dimension.End.Row;
+
+                for (int rowIterator = 2; rowIterator <= noOfRow; rowIterator++)
+                {
+                    if (workSheet.Cells[rowIterator, 1].Value?.ToString() is null)
+                    {
+                        MessageBox.Show("Import successed");
+                        break;
+
+                    }
+                    YaziciVeSeriNumaralari yaziciVeSeriNumaralari = new YaziciVeSeriNumaralari
+                    {
+
+                        Personel = workSheet.Cells[rowIterator, 1].Value?.ToString(),
+                        Amir = workSheet.Cells[rowIterator, 2].Value.ToString(),
+                        Yazici = workSheet.Cells[rowIterator, 3].Value.ToString(),
+                        SeriNumarasi = workSheet.Cells[rowIterator, 4].Value.ToString(),
+                        SicilNo= workSheet.Cells[rowIterator, 5].Value?.ToString(),
+
+                    };
+
+                    YaziciVeSeriNumaralariList.Add(yaziciVeSeriNumaralari);
+                }
+
+
+
+
+                return YaziciVeSeriNumaralariList;
+            }
+
+            return null;
+        }
+
         public static void AddDB(List<HyteraPerson> hyteraPersons)
         {
             HyteraPersonManager manager = new(new());
@@ -113,6 +162,14 @@ namespace Console.Core.ImportExcel
 
             YaziciManager manager = new(new());
             foreach (var item in yazicies)
+            {
+                manager.Add(item);
+            }
+        }
+        public static void AddYaziciVeSeriNumaralariDb(List<YaziciVeSeriNumaralari> yaziciVeSeriNumaralari)
+        {
+            YaziciVeSeriNumaralariManager manager = new(new());
+            foreach (var item in yaziciVeSeriNumaralari)
             {
                 manager.Add(item);
             }

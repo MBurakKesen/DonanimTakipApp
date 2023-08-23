@@ -97,6 +97,7 @@
             this.EkleBtn.TabIndex = 7;
             this.EkleBtn.Text = "EKLE";
             this.EkleBtn.UseVisualStyleBackColor = true;
+            this.EkleBtn.Click += new System.EventHandler(this.EkleBtn_Click);
             // 
             // YaziciCBX
             // 

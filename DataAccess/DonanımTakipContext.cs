@@ -15,9 +15,10 @@ namespace DataAccess
             optionsBuilder.UseSqlServer(@"Server=LAPTOP-RE5ASPI1\SQLEXPRESS;Database=DonanimTakipApp;TrustServerCertificate=True;Trusted_Connection=True");
         }
 
-        DbSet<HyteraPerson> HyteraPersons { get; set;}
-        DbSet<Yazici> Yazicies
+        public DbSet<HyteraPerson> HyteraPersons { get; set;}
+        public DbSet<Yazici> Yazicies
         { get; set;}
+        public DbSet<YaziciVeSeriNumaralari> yaziciVeSeriNumaralaris { get; set;}
        
     }
 }
