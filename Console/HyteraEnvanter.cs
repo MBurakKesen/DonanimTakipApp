@@ -59,17 +59,26 @@ namespace Console
 
         private void SilBtn_Click(object sender, EventArgs e)
         {
-            HyteraPerson person = new();
+            List<HyteraPerson> list = new();
 
             foreach (DataGridViewRow item in this.HyteraEnvanterView.SelectedRows)
             {
-                person.Id =Convert.ToInt32(item.Cells[0].Value);
-                person.SeriNo = item.Cells[1].Value.ToString();
-                person.IsimVeSoyisim = item.Cells[2].Value.ToString();
+                HyteraPerson person = new HyteraPerson
+                {
+                    SeriNo = item.Cells[0].Value.ToString(),
+                    IsimVeSoyisim = item.Cells[1].Value.ToString(),
+                   
+                };
+                list.Add(person);
+                
+                
             }
-
-            _manager.Delete(person);
-            MessageBox.Show("Silindi " + person.IsimVeSoyisim);
+            foreach (HyteraPerson person in list)
+            {
+                _manager.Delete(person);
+            }
+            
+            MessageBox.Show("Silindi ");
            
         }
 

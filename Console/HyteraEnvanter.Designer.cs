@@ -143,6 +143,7 @@
             this.Controls.Add(this.ImportBtn);
             this.Controls.Add(this.GeriBtn);
             this.Name = "HyteraEnvanter";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "HyteraEnvanter";
             this.Load += new System.EventHandler(this.HyteraEnvanter_Load);
             ((System.ComponentModel.ISupportInitialize)(this.HyteraEnvanterView)).EndInit();

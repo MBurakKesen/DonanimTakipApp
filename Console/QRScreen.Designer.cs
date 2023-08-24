@@ -46,10 +46,6 @@
             this.QrPic.TabStop = false;
             this.QrPic.Click += new System.EventHandler(this.QrPic_Click);
             // 
-            // qrPrint
-            // 
-            //this.qrPrint.PrintPage += new System.Drawing.Printing.PrintPageEventHandler(this.printDocument1_PrintPage);
-            // 
             // QRScreen
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
@@ -58,6 +54,7 @@
             this.ClientSize = new System.Drawing.Size(782, 753);
             this.Controls.Add(this.QrPic);
             this.Name = "QRScreen";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "QRScreen";
             this.Load += new System.EventHandler(this.QRScreen_Load);
             ((System.ComponentModel.ISupportInitialize)(this.QrPic)).EndInit();

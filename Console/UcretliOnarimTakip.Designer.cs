@@ -184,7 +184,9 @@
             this.Controls.Add(this.GüncelleBtn);
             this.Controls.Add(this.GeriBtn);
             this.Name = "UcretliOnarimTakip";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "UcretliOnarimTakip";
+            this.Load += new System.EventHandler(this.UcretliOnarimTakip_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
 

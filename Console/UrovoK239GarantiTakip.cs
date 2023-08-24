@@ -16,5 +16,10 @@ namespace Console
         {
             InitializeComponent();
         }
+
+        private void UrovoK239GarantiTakip_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

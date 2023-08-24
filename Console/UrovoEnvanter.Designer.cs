@@ -50,6 +50,7 @@
             this.YaziciDGV.RowTemplate.Height = 29;
             this.YaziciDGV.Size = new System.Drawing.Size(809, 428);
             this.YaziciDGV.TabIndex = 0;
+            this.YaziciDGV.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.YaziciDGV_CellContentClick);
             // 
             // EkleBtn
             // 
@@ -60,6 +61,7 @@
             this.EkleBtn.TabIndex = 1;
             this.EkleBtn.Text = "EKLE";
             this.EkleBtn.UseVisualStyleBackColor = true;
+            this.EkleBtn.Click += new System.EventHandler(this.EkleBtn_Click);
             // 
             // SilBtn
             // 
@@ -70,6 +72,7 @@
             this.SilBtn.TabIndex = 2;
             this.SilBtn.Text = "SİL";
             this.SilBtn.UseVisualStyleBackColor = true;
+            this.SilBtn.Click += new System.EventHandler(this.SilBtn_Click);
             // 
             // IceriAktarBtn
             // 
@@ -116,6 +119,7 @@
             this.Controls.Add(this.EkleBtn);
             this.Controls.Add(this.YaziciDGV);
             this.Name = "UrovoEnvanter";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Yazıcılar";
             this.Load += new System.EventHandler(this.UrovoEnvanter_Load);
             ((System.ComponentModel.ISupportInitialize)(this.YaziciDGV)).EndInit();

@@ -29,14 +29,14 @@
         private void InitializeComponent()
         {
             this.label1 = new System.Windows.Forms.Label();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.ModelTxt = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
-            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.SeriNumarasıTxt = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
-            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
+            this.TeslimTarihiDtp = new System.Windows.Forms.DateTimePicker();
             this.label4 = new System.Windows.Forms.Label();
             this.EkleBtn = new System.Windows.Forms.Button();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.MarkaCbx = new System.Windows.Forms.ComboBox();
             this.YazıcıEkleBtn = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
@@ -49,12 +49,12 @@
             this.label1.TabIndex = 0;
             this.label1.Text = "Marka";
             // 
-            // textBox2
+            // ModelTxt
             // 
-            this.textBox2.Location = new System.Drawing.Point(97, 153);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(193, 27);
-            this.textBox2.TabIndex = 3;
+            this.ModelTxt.Location = new System.Drawing.Point(97, 153);
+            this.ModelTxt.Name = "ModelTxt";
+            this.ModelTxt.Size = new System.Drawing.Size(193, 27);
+            this.ModelTxt.TabIndex = 3;
             // 
             // label2
             // 
@@ -65,12 +65,12 @@
             this.label2.TabIndex = 2;
             this.label2.Text = "Model";
             // 
-            // textBox3
+            // SeriNumarasıTxt
             // 
-            this.textBox3.Location = new System.Drawing.Point(97, 337);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(193, 27);
-            this.textBox3.TabIndex = 5;
+            this.SeriNumarasıTxt.Location = new System.Drawing.Point(97, 337);
+            this.SeriNumarasıTxt.Name = "SeriNumarasıTxt";
+            this.SeriNumarasıTxt.Size = new System.Drawing.Size(193, 27);
+            this.SeriNumarasıTxt.TabIndex = 5;
             // 
             // label3
             // 
@@ -81,12 +81,12 @@
             this.label3.TabIndex = 4;
             this.label3.Text = "Seri Numarası";
             // 
-            // dateTimePicker1
+            // TeslimTarihiDtp
             // 
-            this.dateTimePicker1.Location = new System.Drawing.Point(97, 241);
-            this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(193, 27);
-            this.dateTimePicker1.TabIndex = 6;
+            this.TeslimTarihiDtp.Location = new System.Drawing.Point(97, 241);
+            this.TeslimTarihiDtp.Name = "TeslimTarihiDtp";
+            this.TeslimTarihiDtp.Size = new System.Drawing.Size(193, 27);
+            this.TeslimTarihiDtp.TabIndex = 6;
             // 
             // label4
             // 
@@ -105,17 +105,18 @@
             this.EkleBtn.TabIndex = 8;
             this.EkleBtn.Text = "EKLE";
             this.EkleBtn.UseVisualStyleBackColor = true;
+            this.EkleBtn.Click += new System.EventHandler(this.EkleBtn_Click);
             // 
-            // comboBox1
+            // MarkaCbx
             // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Items.AddRange(new object[] {
+            this.MarkaCbx.FormattingEnabled = true;
+            this.MarkaCbx.Items.AddRange(new object[] {
             "UROVO",
             "ZEBRA"});
-            this.comboBox1.Location = new System.Drawing.Point(97, 53);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(193, 28);
-            this.comboBox1.TabIndex = 9;
+            this.MarkaCbx.Location = new System.Drawing.Point(97, 53);
+            this.MarkaCbx.Name = "MarkaCbx";
+            this.MarkaCbx.Size = new System.Drawing.Size(193, 28);
+            this.MarkaCbx.TabIndex = 9;
             // 
             // YazıcıEkleBtn
             // 
@@ -132,17 +133,18 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(461, 474);
             this.Controls.Add(this.YazıcıEkleBtn);
-            this.Controls.Add(this.comboBox1);
+            this.Controls.Add(this.MarkaCbx);
             this.Controls.Add(this.EkleBtn);
             this.Controls.Add(this.label4);
-            this.Controls.Add(this.dateTimePicker1);
-            this.Controls.Add(this.textBox3);
+            this.Controls.Add(this.TeslimTarihiDtp);
+            this.Controls.Add(this.SeriNumarasıTxt);
             this.Controls.Add(this.label3);
-            this.Controls.Add(this.textBox2);
+            this.Controls.Add(this.ModelTxt);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Name = "UrovoEnvanterYaziciEkleme";
             this.Text = "UrovoEnvanterYaziciEkleme";
+            this.Load += new System.EventHandler(this.UrovoEnvanterYaziciEkleme_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -151,14 +153,14 @@
         #endregion
 
         private Label label1;
-        private TextBox textBox2;
+        private TextBox ModelTxt;
         private Label label2;
-        private TextBox textBox3;
+        private TextBox SeriNumarasıTxt;
         private Label label3;
-        private DateTimePicker dateTimePicker1;
+        private DateTimePicker TeslimTarihiDtp;
         private Label label4;
         private Button EkleBtn;
-        private ComboBox comboBox1;
+        private ComboBox MarkaCbx;
         private Button YazıcıEkleBtn;
     }
 }

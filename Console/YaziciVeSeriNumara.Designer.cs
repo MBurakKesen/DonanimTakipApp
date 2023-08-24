@@ -57,6 +57,7 @@
             this.SilBtn.TabIndex = 2;
             this.SilBtn.Text = "SİL";
             this.SilBtn.UseVisualStyleBackColor = true;
+            this.SilBtn.Click += new System.EventHandler(this.SilBtn_Click);
             // 
             // EkleBtn
             // 
@@ -67,6 +68,7 @@
             this.EkleBtn.TabIndex = 3;
             this.EkleBtn.Text = "EKLE";
             this.EkleBtn.UseVisualStyleBackColor = true;
+            this.EkleBtn.Click += new System.EventHandler(this.EkleBtn_Click);
             // 
             // GüncelleBtn
             // 
@@ -77,6 +79,7 @@
             this.GüncelleBtn.TabIndex = 4;
             this.GüncelleBtn.Text = "GÜNCELLE";
             this.GüncelleBtn.UseVisualStyleBackColor = true;
+            this.GüncelleBtn.Click += new System.EventHandler(this.GüncelleBtn_Click);
             // 
             // IceriAktarBtn
             // 
@@ -98,6 +101,7 @@
             this.DısarıAktarBtn.TabIndex = 6;
             this.DısarıAktarBtn.Text = "Dışarı Aktar";
             this.DısarıAktarBtn.UseVisualStyleBackColor = true;
+            this.DısarıAktarBtn.Click += new System.EventHandler(this.DısarıAktarBtn_Click);
             // 
             // YaziciVeSeriNumaralariDGV
             // 
@@ -112,6 +116,7 @@
             this.YaziciVeSeriNumaralariDGV.RowTemplate.Height = 29;
             this.YaziciVeSeriNumaralariDGV.Size = new System.Drawing.Size(779, 349);
             this.YaziciVeSeriNumaralariDGV.TabIndex = 7;
+            this.YaziciVeSeriNumaralariDGV.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.YaziciVeSeriNumaralariDGV_CellContentClick);
             // 
             // YaziciVeSeriNumara
             // 
@@ -126,6 +131,7 @@
             this.Controls.Add(this.SilBtn);
             this.Controls.Add(this.GeriBtn);
             this.Name = "YaziciVeSeriNumara";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "YaziciVeSeriNumara";
             this.Load += new System.EventHandler(this.YaziciVeSeriNumara_Load);
             ((System.ComponentModel.ISupportInitialize)(this.YaziciVeSeriNumaralariDGV)).EndInit();

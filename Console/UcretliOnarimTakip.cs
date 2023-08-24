@@ -30,5 +30,10 @@ namespace Console
             ekleme.Show();
 
         }
+
+        private void UcretliOnarimTakip_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
