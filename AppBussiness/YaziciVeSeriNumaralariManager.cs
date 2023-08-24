@@ -32,5 +32,9 @@ namespace AppBussiness
         {
             return _yaziciVeSeriNumaralariDAL.GetAll(filter);
         }
+        public void Update(YaziciVeSeriNumaralari yaziciVeSeriNumaralari)
+        {
+            _yaziciVeSeriNumaralariDAL.Update(yaziciVeSeriNumaralari);
+        }
     }
 }
