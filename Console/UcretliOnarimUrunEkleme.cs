@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Entity.Models;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -24,7 +25,15 @@ namespace Console
 
         private void GonderBtn_Click(object sender, EventArgs e)
         {
+            Onarim onarim= new Onarim();
+            onarim.Ariza = ArizaCbx.Text;
+            onarim.GarantiBitisTarihi=GarantiBitisTarihi.Text;
             this.Close();
+        }
+
+        private void GelişTarihiDtp_MouseHover(object sender, EventArgs e)
+        {
+            OptionalLbl.Visible = true;
         }
     }
 }

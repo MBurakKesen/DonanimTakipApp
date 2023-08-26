@@ -30,8 +30,8 @@
         {
             this.GeriBtn = new System.Windows.Forms.Button();
             this.GüncelleBtn = new System.Windows.Forms.Button();
-            this.EkleBtn = new System.Windows.Forms.Button();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.OnarımaGonderBtn = new System.Windows.Forms.Button();
+            this.OnarimTakipDgv = new System.Windows.Forms.DataGridView();
             this.SeriNo = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.SENo = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.FormNo = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -43,14 +43,15 @@
             this.GarantiBitisTarihi = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.KalanSüreAy = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.KalanSüreGün = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            this.SilBtn = new System.Windows.Forms.Button();
+            ((System.ComponentModel.ISupportInitialize)(this.OnarimTakipDgv)).BeginInit();
             this.SuspendLayout();
             // 
             // GeriBtn
             // 
             this.GeriBtn.Location = new System.Drawing.Point(12, 12);
             this.GeriBtn.Name = "GeriBtn";
-            this.GeriBtn.Size = new System.Drawing.Size(94, 29);
+            this.GeriBtn.Size = new System.Drawing.Size(51, 29);
             this.GeriBtn.TabIndex = 0;
             this.GeriBtn.Text = "GERİ";
             this.GeriBtn.UseVisualStyleBackColor = true;
@@ -58,27 +59,33 @@
             // 
             // GüncelleBtn
             // 
-            this.GüncelleBtn.Location = new System.Drawing.Point(248, 526);
+            this.GüncelleBtn.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.GüncelleBtn.Location = new System.Drawing.Point(309, 1);
             this.GüncelleBtn.Name = "GüncelleBtn";
             this.GüncelleBtn.Size = new System.Drawing.Size(149, 76);
             this.GüncelleBtn.TabIndex = 1;
             this.GüncelleBtn.Text = "GÜNCELLE";
             this.GüncelleBtn.UseVisualStyleBackColor = true;
             // 
-            // EkleBtn
+            // OnarımaGonderBtn
             // 
-            this.EkleBtn.Location = new System.Drawing.Point(77, 526);
-            this.EkleBtn.Name = "EkleBtn";
-            this.EkleBtn.Size = new System.Drawing.Size(149, 76);
-            this.EkleBtn.TabIndex = 2;
-            this.EkleBtn.Text = "EKLE";
-            this.EkleBtn.UseVisualStyleBackColor = true;
-            this.EkleBtn.Click += new System.EventHandler(this.EkleBtn_Click);
+            this.OnarımaGonderBtn.Location = new System.Drawing.Point(154, 1);
+            this.OnarımaGonderBtn.Name = "OnarımaGonderBtn";
+            this.OnarımaGonderBtn.Size = new System.Drawing.Size(149, 76);
+            this.OnarımaGonderBtn.TabIndex = 2;
+            this.OnarımaGonderBtn.Text = "GÖNDER";
+            this.OnarımaGonderBtn.UseVisualStyleBackColor = true;
+            this.OnarımaGonderBtn.Click += new System.EventHandler(this.EkleBtn_Click);
             // 
-            // dataGridView1
+            // OnarimTakipDgv
             // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.OnarimTakipDgv.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.OnarimTakipDgv.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.OnarimTakipDgv.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells;
+            this.OnarimTakipDgv.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.OnarimTakipDgv.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.SeriNo,
             this.SENo,
             this.FormNo,
@@ -90,104 +97,107 @@
             this.GarantiBitisTarihi,
             this.KalanSüreAy,
             this.KalanSüreGün});
-            this.dataGridView1.Location = new System.Drawing.Point(12, 62);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.RowHeadersWidth = 51;
-            this.dataGridView1.RowTemplate.Height = 29;
-            this.dataGridView1.Size = new System.Drawing.Size(918, 445);
-            this.dataGridView1.TabIndex = 3;
+            this.OnarimTakipDgv.Location = new System.Drawing.Point(-1, 83);
+            this.OnarimTakipDgv.Name = "OnarimTakipDgv";
+            this.OnarimTakipDgv.RowHeadersWidth = 51;
+            this.OnarimTakipDgv.RowTemplate.Height = 29;
+            this.OnarimTakipDgv.Size = new System.Drawing.Size(779, 385);
+            this.OnarimTakipDgv.TabIndex = 3;
+            this.OnarimTakipDgv.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.OnarimTakipDgv_CellContentClick);
             // 
             // SeriNo
             // 
             this.SeriNo.HeaderText = "Seri No";
             this.SeriNo.MinimumWidth = 6;
             this.SeriNo.Name = "SeriNo";
-            this.SeriNo.Width = 125;
             // 
             // SENo
             // 
             this.SENo.HeaderText = "SE No";
             this.SENo.MinimumWidth = 6;
             this.SENo.Name = "SENo";
-            this.SENo.Width = 125;
             // 
             // FormNo
             // 
             this.FormNo.HeaderText = "Form No";
             this.FormNo.MinimumWidth = 6;
             this.FormNo.Name = "FormNo";
-            this.FormNo.Width = 125;
             // 
             // Arıza
             // 
             this.Arıza.HeaderText = "Arıza";
             this.Arıza.MinimumWidth = 6;
             this.Arıza.Name = "Arıza";
-            this.Arıza.Width = 125;
             // 
             // YapilanIslem
             // 
             this.YapilanIslem.HeaderText = "Yapılan İşlem";
             this.YapilanIslem.MinimumWidth = 6;
             this.YapilanIslem.Name = "YapilanIslem";
-            this.YapilanIslem.Width = 125;
             // 
             // GonderilisTarihi
             // 
             this.GonderilisTarihi.HeaderText = "Gönderiliş Tarihi";
             this.GonderilisTarihi.MinimumWidth = 6;
             this.GonderilisTarihi.Name = "GonderilisTarihi";
-            this.GonderilisTarihi.Width = 125;
             // 
             // KargoTakipNumarasi
             // 
             this.KargoTakipNumarasi.HeaderText = "Kargo Takip Numarası";
             this.KargoTakipNumarasi.MinimumWidth = 6;
             this.KargoTakipNumarasi.Name = "KargoTakipNumarasi";
-            this.KargoTakipNumarasi.Width = 125;
             // 
             // GelisTarihi
             // 
             this.GelisTarihi.HeaderText = "GelişTarihi";
             this.GelisTarihi.MinimumWidth = 6;
             this.GelisTarihi.Name = "GelisTarihi";
-            this.GelisTarihi.Width = 125;
             // 
             // GarantiBitisTarihi
             // 
             this.GarantiBitisTarihi.HeaderText = "Garanti Bitiş Tarihi";
             this.GarantiBitisTarihi.MinimumWidth = 6;
             this.GarantiBitisTarihi.Name = "GarantiBitisTarihi";
-            this.GarantiBitisTarihi.Width = 125;
             // 
             // KalanSüreAy
             // 
             this.KalanSüreAy.HeaderText = "Kalan Süre (Ay)";
             this.KalanSüreAy.MinimumWidth = 6;
             this.KalanSüreAy.Name = "KalanSüreAy";
-            this.KalanSüreAy.Width = 125;
             // 
             // KalanSüreGün
             // 
             this.KalanSüreGün.HeaderText = "Kalan Süre (Gün)";
             this.KalanSüreGün.MinimumWidth = 6;
             this.KalanSüreGün.Name = "KalanSüreGün";
-            this.KalanSüreGün.Width = 125;
+            // 
+            // SilBtn
+            // 
+            this.SilBtn.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.SilBtn.Location = new System.Drawing.Point(464, 1);
+            this.SilBtn.Name = "SilBtn";
+            this.SilBtn.Size = new System.Drawing.Size(149, 76);
+            this.SilBtn.TabIndex = 4;
+            this.SilBtn.Text = "SİL";
+            this.SilBtn.UseVisualStyleBackColor = true;
             // 
             // UcretliOnarimTakip
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(958, 601);
-            this.Controls.Add(this.dataGridView1);
-            this.Controls.Add(this.EkleBtn);
+            this.ClientSize = new System.Drawing.Size(779, 470);
+            this.Controls.Add(this.SilBtn);
+            this.Controls.Add(this.OnarimTakipDgv);
+            this.Controls.Add(this.OnarımaGonderBtn);
             this.Controls.Add(this.GüncelleBtn);
             this.Controls.Add(this.GeriBtn);
             this.Name = "UcretliOnarimTakip";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "UcretliOnarimTakip";
+            this.TransparencyKey = System.Drawing.Color.Teal;
+            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.UcretliOnarimTakip_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.OnarimTakipDgv)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -196,8 +206,8 @@
 
         private Button GeriBtn;
         private Button GüncelleBtn;
-        private Button EkleBtn;
-        private DataGridView dataGridView1;
+        private Button OnarımaGonderBtn;
+        private DataGridView OnarimTakipDgv;
         private DataGridViewTextBoxColumn SeriNo;
         private DataGridViewTextBoxColumn SENo;
         private DataGridViewTextBoxColumn FormNo;
@@ -209,5 +219,6 @@
         private DataGridViewTextBoxColumn GarantiBitisTarihi;
         private DataGridViewTextBoxColumn KalanSüreAy;
         private DataGridViewTextBoxColumn KalanSüreGün;
+        private Button SilBtn;
     }
 }

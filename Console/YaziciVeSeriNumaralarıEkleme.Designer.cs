@@ -90,6 +90,7 @@
             this.EkleBtn.TabIndex = 6;
             this.EkleBtn.Text = "EKLE";
             this.EkleBtn.UseVisualStyleBackColor = true;
+            this.EkleBtn.Click += new System.EventHandler(this.EkleBtn_Click);
             // 
             // button1
             // 
@@ -112,8 +113,11 @@
             this.Controls.Add(this.AmirTxt);
             this.Controls.Add(this.PersonelTxt);
             this.Controls.Add(this.SicilNotxt);
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
             this.Name = "YaziciVeSeriNumaralarıEkleme";
-            this.Text = "YaziciVeSeriNumaralarıEkleme";
+            this.Text = "EKLEME SAYFASI";
+            this.TransparencyKey = System.Drawing.Color.Green;
             this.Load += new System.EventHandler(this.YaziciVeSeriNumaralarıEkleme_Load);
             this.ResumeLayout(false);
             this.PerformLayout();

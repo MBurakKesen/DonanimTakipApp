@@ -64,7 +64,7 @@ namespace Console
         {
             UrovoEnvanterYaziciEkleme ekleme = new();
             ekleme.Show();
-            this.Close();
+           
 
         }
 

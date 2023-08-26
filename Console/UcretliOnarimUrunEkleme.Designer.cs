@@ -29,23 +29,24 @@
         private void InitializeComponent()
         {
             this.label1 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.SeriNoTxt = new System.Windows.Forms.TextBox();
             this.SeriNoLbl = new System.Windows.Forms.Label();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.FormNoTxt = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
-            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.SENoTxt = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
-            this.textBox6 = new System.Windows.Forms.TextBox();
-            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
-            this.dateTimePicker2 = new System.Windows.Forms.DateTimePicker();
+            this.KargoTakipNoTxt = new System.Windows.Forms.TextBox();
+            this.GonderilisTarihiDtp = new System.Windows.Forms.DateTimePicker();
+            this.GelişTarihiDtp = new System.Windows.Forms.DateTimePicker();
             this.label3 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.YapilanIslemCbx = new System.Windows.Forms.ComboBox();
             this.label9 = new System.Windows.Forms.Label();
             this.GonderBtn = new System.Windows.Forms.Button();
-            this.comboBox2 = new System.Windows.Forms.ComboBox();
+            this.ArizaCbx = new System.Windows.Forms.ComboBox();
+            this.OptionalLbl = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // label1
@@ -56,12 +57,12 @@
             this.label1.Size = new System.Drawing.Size(0, 20);
             this.label1.TabIndex = 0;
             // 
-            // textBox1
+            // SeriNoTxt
             // 
-            this.textBox1.Location = new System.Drawing.Point(132, 80);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(202, 27);
-            this.textBox1.TabIndex = 1;
+            this.SeriNoTxt.Location = new System.Drawing.Point(132, 80);
+            this.SeriNoTxt.Name = "SeriNoTxt";
+            this.SeriNoTxt.Size = new System.Drawing.Size(202, 27);
+            this.SeriNoTxt.TabIndex = 1;
             // 
             // SeriNoLbl
             // 
@@ -72,12 +73,12 @@
             this.SeriNoLbl.TabIndex = 2;
             this.SeriNoLbl.Text = "Seri No";
             // 
-            // textBox2
+            // FormNoTxt
             // 
-            this.textBox2.Location = new System.Drawing.Point(132, 218);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(202, 27);
-            this.textBox2.TabIndex = 3;
+            this.FormNoTxt.Location = new System.Drawing.Point(132, 218);
+            this.FormNoTxt.Name = "FormNoTxt";
+            this.FormNoTxt.Size = new System.Drawing.Size(202, 27);
+            this.FormNoTxt.TabIndex = 3;
             // 
             // label4
             // 
@@ -88,12 +89,12 @@
             this.label4.TabIndex = 6;
             this.label4.Text = "Arıza";
             // 
-            // textBox3
+            // SENoTxt
             // 
-            this.textBox3.Location = new System.Drawing.Point(132, 150);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(202, 27);
-            this.textBox3.TabIndex = 5;
+            this.SENoTxt.Location = new System.Drawing.Point(132, 150);
+            this.SENoTxt.Name = "SENoTxt";
+            this.SENoTxt.Size = new System.Drawing.Size(202, 27);
+            this.SENoTxt.TabIndex = 5;
             // 
             // label5
             // 
@@ -122,26 +123,27 @@
             this.label7.TabIndex = 12;
             this.label7.Text = "Kargo Takip No";
             // 
-            // textBox6
+            // KargoTakipNoTxt
             // 
-            this.textBox6.Location = new System.Drawing.Point(132, 485);
-            this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(202, 27);
-            this.textBox6.TabIndex = 11;
+            this.KargoTakipNoTxt.Location = new System.Drawing.Point(132, 485);
+            this.KargoTakipNoTxt.Name = "KargoTakipNoTxt";
+            this.KargoTakipNoTxt.Size = new System.Drawing.Size(202, 27);
+            this.KargoTakipNoTxt.TabIndex = 11;
             // 
-            // dateTimePicker1
+            // GonderilisTarihiDtp
             // 
-            this.dateTimePicker1.Location = new System.Drawing.Point(132, 418);
-            this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(202, 27);
-            this.dateTimePicker1.TabIndex = 13;
+            this.GonderilisTarihiDtp.Location = new System.Drawing.Point(132, 418);
+            this.GonderilisTarihiDtp.Name = "GonderilisTarihiDtp";
+            this.GonderilisTarihiDtp.Size = new System.Drawing.Size(202, 27);
+            this.GonderilisTarihiDtp.TabIndex = 13;
             // 
-            // dateTimePicker2
+            // GelişTarihiDtp
             // 
-            this.dateTimePicker2.Location = new System.Drawing.Point(132, 557);
-            this.dateTimePicker2.Name = "dateTimePicker2";
-            this.dateTimePicker2.Size = new System.Drawing.Size(202, 27);
-            this.dateTimePicker2.TabIndex = 14;
+            this.GelişTarihiDtp.Location = new System.Drawing.Point(132, 557);
+            this.GelişTarihiDtp.Name = "GelişTarihiDtp";
+            this.GelişTarihiDtp.Size = new System.Drawing.Size(202, 27);
+            this.GelişTarihiDtp.TabIndex = 14;
+            this.GelişTarihiDtp.MouseHover += new System.EventHandler(this.GelişTarihiDtp_MouseHover);
             // 
             // label3
             // 
@@ -161,13 +163,13 @@
             this.label8.TabIndex = 16;
             this.label8.Text = "Geliş Tarihi";
             // 
-            // comboBox1
+            // YapilanIslemCbx
             // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(132, 352);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(202, 28);
-            this.comboBox1.TabIndex = 17;
+            this.YapilanIslemCbx.FormattingEnabled = true;
+            this.YapilanIslemCbx.Location = new System.Drawing.Point(132, 352);
+            this.YapilanIslemCbx.Name = "YapilanIslemCbx";
+            this.YapilanIslemCbx.Size = new System.Drawing.Size(202, 28);
+            this.YapilanIslemCbx.TabIndex = 17;
             // 
             // label9
             // 
@@ -188,37 +190,50 @@
             this.GonderBtn.UseVisualStyleBackColor = true;
             this.GonderBtn.Click += new System.EventHandler(this.GonderBtn_Click);
             // 
-            // comboBox2
+            // ArizaCbx
             // 
-            this.comboBox2.FormattingEnabled = true;
-            this.comboBox2.Location = new System.Drawing.Point(132, 291);
-            this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(202, 28);
-            this.comboBox2.TabIndex = 20;
+            this.ArizaCbx.FormattingEnabled = true;
+            this.ArizaCbx.Location = new System.Drawing.Point(132, 291);
+            this.ArizaCbx.Name = "ArizaCbx";
+            this.ArizaCbx.Size = new System.Drawing.Size(202, 28);
+            this.ArizaCbx.TabIndex = 20;
+            // 
+            // OptionalLbl
+            // 
+            this.OptionalLbl.AutoSize = true;
+            this.OptionalLbl.Location = new System.Drawing.Point(12, 564);
+            this.OptionalLbl.Name = "OptionalLbl";
+            this.OptionalLbl.Size = new System.Drawing.Size(94, 20);
+            this.OptionalLbl.TabIndex = 21;
+            this.OptionalLbl.Text = "(OPSİYONEL)";
+            this.OptionalLbl.Visible = false;
             // 
             // UcretliOnarimUrunEkleme
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(544, 689);
-            this.Controls.Add(this.comboBox2);
+            this.Controls.Add(this.OptionalLbl);
+            this.Controls.Add(this.ArizaCbx);
             this.Controls.Add(this.GonderBtn);
             this.Controls.Add(this.label9);
-            this.Controls.Add(this.comboBox1);
+            this.Controls.Add(this.YapilanIslemCbx);
             this.Controls.Add(this.label8);
             this.Controls.Add(this.label3);
-            this.Controls.Add(this.dateTimePicker2);
-            this.Controls.Add(this.dateTimePicker1);
+            this.Controls.Add(this.GelişTarihiDtp);
+            this.Controls.Add(this.GonderilisTarihiDtp);
             this.Controls.Add(this.label7);
-            this.Controls.Add(this.textBox6);
+            this.Controls.Add(this.KargoTakipNoTxt);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label4);
-            this.Controls.Add(this.textBox3);
-            this.Controls.Add(this.textBox2);
+            this.Controls.Add(this.SENoTxt);
+            this.Controls.Add(this.FormNoTxt);
             this.Controls.Add(this.SeriNoLbl);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.SeriNoTxt);
             this.Controls.Add(this.label1);
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
             this.Name = "UcretliOnarimUrunEkleme";
             this.Text = "UcretliOnarimUrunEkleme";
             this.Load += new System.EventHandler(this.UcretliOnarimUrunEkleme_Load);
@@ -230,22 +245,23 @@
         #endregion
 
         private Label label1;
-        private TextBox textBox1;
+        private TextBox SeriNoTxt;
         private Label SeriNoLbl;
-        private TextBox textBox2;
+        private TextBox FormNoTxt;
         private Label label4;
-        private TextBox textBox3;
+        private TextBox SENoTxt;
         private Label label5;
         private Label label6;
         private Label label7;
-        private TextBox textBox6;
-        private DateTimePicker dateTimePicker1;
-        private DateTimePicker dateTimePicker2;
+        private TextBox KargoTakipNoTxt;
+        private DateTimePicker GonderilisTarihiDtp;
+        private DateTimePicker GelişTarihiDtp;
         private Label label3;
         private Label label8;
-        private ComboBox comboBox1;
+        private ComboBox YapilanIslemCbx;
         private Label label9;
         private Button GonderBtn;
-        private ComboBox comboBox2;
+        private ComboBox ArizaCbx;
+        private Label OptionalLbl;
     }
 }

@@ -54,5 +54,12 @@ namespace Console
             MessageBox.Show("Geliştirici: Muhammed Burak Kesen \n" +
                 "Sürüm: 1.0.0 Beta");
         }
+
+        private void OnarımTakipBtn_Click(object sender, EventArgs e)
+        {
+            UcretliOnarimTakip ucretliOnarimTakip= new();
+            ucretliOnarimTakip.Show();
+            this.Hide();
+        }
     }
 }

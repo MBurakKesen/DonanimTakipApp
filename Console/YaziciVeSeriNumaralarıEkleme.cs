@@ -33,5 +33,10 @@ namespace Console
         {
 
         }
+
+        private void EkleBtn_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

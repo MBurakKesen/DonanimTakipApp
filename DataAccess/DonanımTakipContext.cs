@@ -19,6 +19,7 @@ namespace DataAccess
         public DbSet<Yazici> Yazicies
         { get; set;}
         public DbSet<YaziciVeSeriNumaralari> yaziciVeSeriNumaralaris { get; set;}
+        public DbSet<Onarim> Onarims { get; set;}
        
     }
 }

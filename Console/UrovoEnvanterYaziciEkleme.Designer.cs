@@ -142,8 +142,10 @@
             this.Controls.Add(this.ModelTxt);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
             this.Name = "UrovoEnvanterYaziciEkleme";
-            this.Text = "UrovoEnvanterYaziciEkleme";
+            this.Text = "EKLEME SAYFASI";
             this.Load += new System.EventHandler(this.UrovoEnvanterYaziciEkleme_Load);
             this.ResumeLayout(false);
             this.PerformLayout();

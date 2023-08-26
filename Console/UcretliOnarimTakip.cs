@@ -35,5 +35,10 @@ namespace Console
         {
 
         }
+
+        private void OnarimTakipDgv_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
     }
 }
