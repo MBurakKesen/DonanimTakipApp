@@ -15,7 +15,7 @@ namespace Console
 
             try
             {
-                UptadeProject<Anasayfa> updates = new(this, @"https://github.com/MBurakKesen/DonanimTakipApp/blob/master/Published/update.txt", @"https://github.com/MBurakKesen/DonanimTakipApp/blob/master/Published/DonanimTakipAppRar.rar", "DonanimTakipApp.Rar", "1.0.4");
+                UptadeProject<Anasayfa> updates = new(this, @"https://github.com/MBurakKesen/DonanimTakipApp/blob/master/Published/update.txt", @"https://github.com/MBurakKesen/DonanimTakipApp/blob/master/Published/DonanimTakipApp.Rar", "DonanimTakipApp.Rar", "1.0.4");
             }
             catch (Exception)
             {
