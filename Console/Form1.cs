@@ -12,13 +12,21 @@ namespace Console
         public Anasayfa()
         {
             InitializeComponent();
-            
 
+            try
+            {
+                UptadeProject<Anasayfa> updates = new(this, @"https://github.com/MBurakKesen/DonanimTakipApp/blob/master/Published/update.txt", @"https://github.com/MBurakKesen/DonanimTakipApp/blob/master/Published/DonanimTakipAppRar.rar", "DonanimTakipApp.Rar", "1.0.4");
+            }
+            catch (Exception)
+            {
+
+                throw;
+            }
         }
 
         private void Form1_Load(object sender, EventArgs e)
         {
-            UptadeProject<Anasayfa> updates = new(this, @"https://github.com/MBurakKesen/DonanimTakipApp/blob/master/Published/update.txt", @"https://github.com/MBurakKesen/DonanimTakipApp/blob/master/Published/DonanimTakipAppRar.rar","DonanimTakipApp.Rar","1.0.0");
+            
         }
 
 

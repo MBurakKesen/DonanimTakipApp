@@ -2,12 +2,12 @@
 
   <PropertyGroup>
     <OutputType>WinExe</OutputType>
-    <TargetFramework>net6.0-windows10.0.17763.0</TargetFramework>
+    <TargetFramework>net6.0-windows7.0</TargetFramework>
     <Nullable>enable</Nullable>
     <UseWindowsForms>true</UseWindowsForms>
     <ImplicitUsings>enable</ImplicitUsings>
-    <AssemblyVersion>1.0.3</AssemblyVersion>
-    <FileVersion>1.0.3</FileVersion>
+    <AssemblyVersion>1.0.4</AssemblyVersion>
+    <FileVersion>1.0.4</FileVersion>
     <StartupObject>Console.Program</StartupObject>
     <ApplicationIcon>Tpdkdesign.net-Refresh-Cl-Windows-View-Detail.ico</ApplicationIcon>
   </PropertyGroup>
@@ -49,6 +49,11 @@
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
   </ItemGroup>
+	<ItemGroup>
+   <None Update="Microsoft.Data.SqlClient.dll">        
+     <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+   </None>
+</ItemGroup>
 	
 
 </Project>
