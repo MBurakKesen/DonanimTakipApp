@@ -67,6 +67,7 @@ namespace DataAccess
                                  on p.IsimVeSoyisim equals c.Personel
                                  select new HyteraDto
                                  {
+                                     Id= p.Id,
                                      IsimVeSoyisim = p.IsimVeSoyisim,
                                      SeriNo = p.SeriNo,
                                      Yazici = c.Yazici,

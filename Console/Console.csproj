@@ -2,10 +2,14 @@
 
   <PropertyGroup>
     <OutputType>WinExe</OutputType>
-    <TargetFramework>net6.0-windows</TargetFramework>
+    <TargetFramework>net6.0-windows10.0.17763.0</TargetFramework>
     <Nullable>enable</Nullable>
     <UseWindowsForms>true</UseWindowsForms>
     <ImplicitUsings>enable</ImplicitUsings>
+    <AssemblyVersion>1.0.3</AssemblyVersion>
+    <FileVersion>1.0.3</FileVersion>
+    <StartupObject>Console.Program</StartupObject>
+    <ApplicationIcon>Tpdkdesign.net-Refresh-Cl-Windows-View-Detail.ico</ApplicationIcon>
   </PropertyGroup>
 
   <ItemGroup>
@@ -21,12 +25,18 @@
   </ItemGroup>
 
   <ItemGroup>
+    <Content Include="Tpdkdesign.net-Refresh-Cl-Windows-View-Detail.ico" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Clowd.Squirrel" Version="2.9.42" />
     <PackageReference Include="EPPlus" Version="6.2.8" />
     <PackageReference Include="QRCoder" Version="1.4.3" />
   </ItemGroup>
 
   <ItemGroup>
     <ProjectReference Include="..\AppBussiness\AppBussiness.csproj" />
+    <ProjectReference Include="..\Entity\Entity.csproj" />
   </ItemGroup>
 
   <ItemGroup>
@@ -43,5 +53,6 @@
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
   </ItemGroup>
+	
 
 </Project>

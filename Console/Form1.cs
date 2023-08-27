@@ -1,4 +1,9 @@
 ﻿using Bussiness;
+using Console.Core;
+using Microsoft.EntityFrameworkCore.Metadata.Conventions.Internal;
+using Squirrel;
+using System.Diagnostics;
+using System.Reflection;
 
 namespace Console
 {
@@ -7,10 +12,14 @@ namespace Console
         public Anasayfa()
         {
             InitializeComponent();
+            
+
         }
 
         private void Form1_Load(object sender, EventArgs e)
         {
+              CheckUpdate.Main();
+
         }
 
 
@@ -23,7 +32,7 @@ namespace Console
 
         private void HyteraEnvanterBtn_Click(object sender, EventArgs e)
         {
-            HyteraEnvanter hyteraEnvanter = new HyteraEnvanter();
+            HyteraEnvanter hyteraEnvanter = new ();
             hyteraEnvanter.Show();
             this.Hide();
         }
@@ -51,8 +60,10 @@ namespace Console
 
         private void AnasayfaLbl_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("Geliştirici: Muhammed Burak Kesen \n" +
-                "Sürüm: 1.0.0 Beta");
+            Assembly assembly = Assembly.GetExecutingAssembly();
+            FileVersionInfo info = FileVersionInfo.GetVersionInfo(assembly.Location);
+            string Text = $"{"Donanım Takip Uygulaması"} {info.FileVersion}";
+            MessageBox.Show(Text);
         }
 
         private void OnarımTakipBtn_Click(object sender, EventArgs e)
@@ -61,5 +72,6 @@ namespace Console
             ucretliOnarimTakip.Show();
             this.Hide();
         }
+       
     }
 }

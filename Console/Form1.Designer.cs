@@ -88,7 +88,7 @@
             // 
             this.AnasayfaLbl.AutoSize = true;
             this.AnasayfaLbl.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.AnasayfaLbl.Location = new System.Drawing.Point(623, 420);
+            this.AnasayfaLbl.Location = new System.Drawing.Point(625, 398);
             this.AnasayfaLbl.Name = "AnasayfaLbl";
             this.AnasayfaLbl.Size = new System.Drawing.Size(198, 28);
             this.AnasayfaLbl.TabIndex = 6;

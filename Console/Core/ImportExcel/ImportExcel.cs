@@ -54,6 +54,10 @@ namespace Console.Core.ImportExcel
 
                 return HyteraPersonList;
             }
+            else
+            {
+
+            }
 
             return null;
         }
@@ -145,6 +149,10 @@ namespace Console.Core.ImportExcel
 
                 return YaziciVeSeriNumaralariList;
             }
+            else
+            {
+
+            }
 
             return null;
         }
@@ -152,10 +160,14 @@ namespace Console.Core.ImportExcel
         public static void AddDB(List<HyteraPerson> hyteraPersons)
         {
             HyteraPersonManager manager = new(new());
-            foreach (var item in hyteraPersons)
+            if (hyteraPersons is not null)
             {
-                manager.Add(item);
+                foreach (var item in hyteraPersons)
+                {
+                    manager.Add(item);
+                }
             }
+            
         }
         public static void AddYaziciDB(List<Yazici> yazicies)
         {

@@ -29,12 +29,13 @@ namespace Console
         {
             view = HyteraEnvanterView;
             view.DataSource = _manager.GetHyteraDtos();
+            //view.Column["Id"].Visibile = false;
 
 
 
-            //foreach (var item in _manager.GetAll())
+            //foreach (var item in _manager.GetHyteraDtos())
             //{
-            //    view.Rows.Add(, item.SeriNo, item.IsimVeSoyisim, item.Yazici);
+            //    view.Rows.Add(item.SeriNo, item.IsimVeSoyisim, item.Yazici);
             //}
         }
         private void EkleBtn_Click(object sender, EventArgs e)
@@ -59,31 +60,22 @@ namespace Console
 
         private void SilBtn_Click(object sender, EventArgs e)
         {
-            List<HyteraPerson> list = new();
-
+           
             foreach (DataGridViewRow item in this.HyteraEnvanterView.SelectedRows)
             {
-                HyteraPerson person = new HyteraPerson
+                _manager.Delete(new HyteraPerson
                 {
-                    SeriNo = item.Cells[0].Value.ToString(),
-                    IsimVeSoyisim = item.Cells[1].Value.ToString(),
+                    Id= Convert.ToInt32(item.Cells[0].Value),
+                    SeriNo = item.Cells[1].Value.ToString(),
+                    IsimVeSoyisim = item.Cells[2].Value.ToString(),
                    
-                };
-                list.Add(person);
-                
-                
+                });
             }
-            foreach (HyteraPerson person in list)
-            {
-                _manager.Delete(person);
-            }
-            
+
             MessageBox.Show("Silindi ");
            
         }
-
-     
-
+   
         private void GuncelleBtn_Click(object sender, EventArgs e)
         {
             int selectedrowindex = HyteraEnvanterView.SelectedCells[0].RowIndex;

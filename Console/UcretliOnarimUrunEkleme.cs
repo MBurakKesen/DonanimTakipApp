@@ -27,7 +27,6 @@ namespace Console
         {
             Onarim onarim= new Onarim();
             onarim.Ariza = ArizaCbx.Text;
-            onarim.GarantiBitisTarihi=GarantiBitisTarihi.Text;
             this.Close();
         }
 
