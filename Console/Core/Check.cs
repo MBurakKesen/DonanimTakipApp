@@ -1,5 +1,4 @@
 ﻿using Entity.Models;
-using Squirrel;
 using System;
 using System.Collections.Generic;
 using System.Diagnostics;
@@ -37,21 +36,7 @@ namespace Console.Core
             }
             return obj;
         }
-        public static async Task CheckForUpdate()
-        {
-            try
-            {
-                using (var mgr = await UpdateManager.GitHubUpdateManager(Constants.GitHubReales))
-                {
-                    var release = await mgr.UpdateApp();
-                }
-            }
-            catch (Exception)
-            {
-
-                throw;
-            }
-        }
+      
        
     }
     

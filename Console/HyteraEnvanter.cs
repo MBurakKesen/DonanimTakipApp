@@ -29,13 +29,12 @@ namespace Console
         {
             view = HyteraEnvanterView;
             view.DataSource = _manager.GetHyteraDtos();
-            //view.Column["Id"].Visibile = false;
-
+            ////view.Column["Id"].Visibile = false;
 
 
             //foreach (var item in _manager.GetHyteraDtos())
             //{
-            //    view.Rows.Add(item.SeriNo, item.IsimVeSoyisim, item.Yazici);
+            //    view.Rows.Add(item.Id,item.SeriNo, item.IsimVeSoyisim, item.Yazici);
             //}
         }
         private void EkleBtn_Click(object sender, EventArgs e)

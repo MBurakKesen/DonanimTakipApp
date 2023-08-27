@@ -35,7 +35,6 @@
             this.AnasayfaLbl = new System.Windows.Forms.Label();
             this.YaziciVeSeriNumaraBtn = new System.Windows.Forms.Button();
             this.OnarımTakipBtn = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // UrovoOnarimTakipBtn
@@ -118,21 +117,11 @@
             this.OnarımTakipBtn.UseVisualStyleBackColor = true;
             this.OnarımTakipBtn.Click += new System.EventHandler(this.OnarımTakipBtn_Click);
             // 
-            // button1
-            // 
-            this.button1.Location = new System.Drawing.Point(709, 169);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(94, 29);
-            this.button1.TabIndex = 9;
-            this.button1.Text = "button1";
-            this.button1.UseVisualStyleBackColor = true;
-            // 
             // Anasayfa
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(846, 473);
-            this.Controls.Add(this.button1);
             this.Controls.Add(this.OnarımTakipBtn);
             this.Controls.Add(this.YaziciVeSeriNumaraBtn);
             this.Controls.Add(this.YaziciSeriNoBtn);
@@ -159,6 +148,5 @@
         private Label AnasayfaLbl;
         private Button YaziciVeSeriNumaraBtn;
         private Button OnarımTakipBtn;
-        private Button button1;
     }
 }

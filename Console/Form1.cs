@@ -1,9 +1,9 @@
 ﻿using Bussiness;
 using Console.Core;
 using Microsoft.EntityFrameworkCore.Metadata.Conventions.Internal;
-using Squirrel;
 using System.Diagnostics;
 using System.Reflection;
+using UpdateProject;
 
 namespace Console
 {
@@ -18,7 +18,7 @@ namespace Console
 
         private void Form1_Load(object sender, EventArgs e)
         {
-
+            UptadeProject<Anasayfa> updates = new(this, @"https://github.com/MBurakKesen/DonanimTakipApp/blob/master/Published/update.txt", @"https://github.com/MBurakKesen/DonanimTakipApp/blob/master/Published/DonanimTakipAppRar.rar","DonanimTakipApp.Rar","1.0.0");
         }
 
 

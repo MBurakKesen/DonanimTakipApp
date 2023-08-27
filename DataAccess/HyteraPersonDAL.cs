@@ -58,7 +58,7 @@ namespace DataAccess
             }
         }
 
-        public List<HyteraDto> GetProductDetails()
+        public List<HyteraDto> GetHyteraDto()
         {
             using (DonanımTakipContext context = new())
             {

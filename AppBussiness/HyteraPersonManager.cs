@@ -40,7 +40,7 @@ namespace Bussiness
 
         public List<HyteraDto> GetHyteraDtos()
         {
-            return _hyteraPersonDal.GetProductDetails();
+            return _hyteraPersonDal.GetHyteraDto();
         }
     }
 }
