@@ -1,4 +1,11 @@
+*.manifest binary
+*.application binary
+*.deploy binary
+*  -text
+
 ###############################################################################
+
+
 # Set default behavior to automatically normalize line endings.
 ###############################################################################
 * text=auto
@@ -62,7 +69,4 @@
 #*.rtf   diff=astextplain
 #*.RTF   diff=astextplain
 
-*.manifest binary
-*.application binary
-*.deploy binary
-*  -text
+
