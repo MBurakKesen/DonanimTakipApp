@@ -11,9 +11,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AppBussiness", "AppBussines
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Console", "Console\Console.csproj", "{0D795E03-0056-4E21-B12A-022BCE4BF394}"
 EndProject
-Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "DonanimTakipApp", "..\..\..\Desktop\Installer.vdproj", "{454AE1DF-245D-4160-8475-0209551937FC}"
-EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "UpdateProject", "..\UpdateProject\UpdateProject\UpdateProject.csproj", "{9ED1BD98-F0D6-484B-9948-2EA0F2CC4B13}"
+EndProject
+Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "DonanımTakipApp", "DonanimTakipApp.vdproj", "{8FCD9FF1-4DEA-4F6B-B340-0AF857CE075C}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -37,12 +37,12 @@ Global
 		{0D795E03-0056-4E21-B12A-022BCE4BF394}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0D795E03-0056-4E21-B12A-022BCE4BF394}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0D795E03-0056-4E21-B12A-022BCE4BF394}.Release|Any CPU.Build.0 = Release|Any CPU
-		{454AE1DF-245D-4160-8475-0209551937FC}.Debug|Any CPU.ActiveCfg = Debug
-		{454AE1DF-245D-4160-8475-0209551937FC}.Release|Any CPU.ActiveCfg = Release
 		{9ED1BD98-F0D6-484B-9948-2EA0F2CC4B13}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{9ED1BD98-F0D6-484B-9948-2EA0F2CC4B13}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9ED1BD98-F0D6-484B-9948-2EA0F2CC4B13}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{9ED1BD98-F0D6-484B-9948-2EA0F2CC4B13}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8FCD9FF1-4DEA-4F6B-B340-0AF857CE075C}.Debug|Any CPU.ActiveCfg = Debug
+		{8FCD9FF1-4DEA-4F6B-B340-0AF857CE075C}.Release|Any CPU.ActiveCfg = Release
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

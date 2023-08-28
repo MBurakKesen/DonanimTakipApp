@@ -22,6 +22,14 @@ namespace Console.Core.QrOluştur
             Bitmap qrCodeImage = qrCode.GetGraphic(5, "#FF0000", "#FFFFFF");
             return qrCodeImage;
         }
+        public static Bitmap Create(string seriNumarasi)
+        {
+            QRCodeGenerator qrGenerator = new QRCodeGenerator();
+            QRCodeData qrCodeData = qrGenerator.CreateQrCode(seriNumarasi, QRCodeGenerator.ECCLevel.Q);
+            QRCode qrCode = new QRCode(qrCodeData);
+            Bitmap qrCodeImage = qrCode.GetGraphic(5, "#FF0000", "#FFFFFF");
+            return qrCodeImage;
+        }
     }
 
 }

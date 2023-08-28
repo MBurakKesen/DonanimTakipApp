@@ -15,7 +15,7 @@ namespace Console
 
             try
             {
-                UptadeProject<Anasayfa> updates = new(this, @"https://github.com/MBurakKesen/DonanimTakipApp/blob/master/Published/update.txt", @"https://github.com/MBurakKesen/DonanimTakipApp/blob/master/Published/DonanimTakipApp.rar", "DonanimTakipApp.rar", "1.0.6");
+                //UptadeProject<Anasayfa> updates = new(this, @"https://www.dropbox.com/scl/fi/ic9jagmlddkgmo5onetgh/update.txt?rlkey=th7mx7vh3rww2nyo62lkh0btk&dl=1", @"https://www.dropbox.com/scl/fi/gtzec3p4lzvhit6twb3ku/DonanimTakipApp.zip?rlkey=7e93y4qkmashwzacj2opuw5re&dl=0", "DonanimTakipApp.zip", "1.0.0");
             }
             catch (Exception)
             {
@@ -79,6 +79,12 @@ namespace Console
             ucretliOnarimTakip.Show();
             this.Hide();
         }
-       
+
+        private void OtaparkPersonelBtn_Click(object sender, EventArgs e)
+        {
+            OtoparkPersonel otoparkPersonel = new();
+            otoparkPersonel.Show();
+            this.Close();
+        }
     }
 }

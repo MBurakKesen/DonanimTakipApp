@@ -38,7 +38,7 @@
             this.QrPic.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.QrPic.Location = new System.Drawing.Point(128, 171);
+            this.QrPic.Location = new System.Drawing.Point(122, 163);
             this.QrPic.Name = "QrPic";
             this.QrPic.Size = new System.Drawing.Size(463, 400);
             this.QrPic.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;

@@ -60,7 +60,7 @@
             // GüncelleBtn
             // 
             this.GüncelleBtn.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.GüncelleBtn.Location = new System.Drawing.Point(309, 1);
+            this.GüncelleBtn.Location = new System.Drawing.Point(425, 1);
             this.GüncelleBtn.Name = "GüncelleBtn";
             this.GüncelleBtn.Size = new System.Drawing.Size(149, 76);
             this.GüncelleBtn.TabIndex = 1;
@@ -101,7 +101,7 @@
             this.OnarimTakipDgv.Name = "OnarimTakipDgv";
             this.OnarimTakipDgv.RowHeadersWidth = 51;
             this.OnarimTakipDgv.RowTemplate.Height = 29;
-            this.OnarimTakipDgv.Size = new System.Drawing.Size(779, 385);
+            this.OnarimTakipDgv.Size = new System.Drawing.Size(1011, 410);
             this.OnarimTakipDgv.TabIndex = 3;
             this.OnarimTakipDgv.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.OnarimTakipDgv_CellContentClick);
             // 
@@ -174,7 +174,7 @@
             // SilBtn
             // 
             this.SilBtn.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.SilBtn.Location = new System.Drawing.Point(464, 1);
+            this.SilBtn.Location = new System.Drawing.Point(696, 1);
             this.SilBtn.Name = "SilBtn";
             this.SilBtn.Size = new System.Drawing.Size(149, 76);
             this.SilBtn.TabIndex = 4;
@@ -185,7 +185,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(779, 470);
+            this.ClientSize = new System.Drawing.Size(1011, 495);
             this.Controls.Add(this.SilBtn);
             this.Controls.Add(this.OnarimTakipDgv);
             this.Controls.Add(this.OnarımaGonderBtn);

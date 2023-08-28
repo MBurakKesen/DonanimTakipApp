@@ -111,17 +111,27 @@ namespace Console
 
         private void QrBtn_Click(object sender, EventArgs e)
         {
-            HyteraDto hyteraDto = new();
+            //HyteraDto hyteraDto = new();
 
+            //foreach (DataGridViewRow item in this.HyteraEnvanterView.SelectedRows)
+            //{
+            //   // hyteraDto.SeriNo = item.Cells[1].Value.ToString();
+            //    //hyteraDto.IsimVeSoyisim = item.Cells[1].Value.ToString();
+            //    hyteraDto.Yazici = item.Cells[3].Value.ToString();
+
+            //}
+
+            //CreateQr.Create<HyteraDto>(hyteraDto);
+
+
+            string SeriNo="";
             foreach (DataGridViewRow item in this.HyteraEnvanterView.SelectedRows)
             {
-                hyteraDto.SeriNo = item.Cells[0].Value.ToString();
-                //hyteraDto.IsimVeSoyisim = item.Cells[1].Value.ToString();
-                hyteraDto.Yazici = item.Cells[2].Value.ToString();
-                
+                SeriNo = item.Cells[1].Value.ToString();
             }
-            CreateQr.Create<HyteraDto>(hyteraDto);
-            QRScreen screen = new(CreateQr.Create<HyteraDto>(hyteraDto));
+            ;
+            QRScreen screen = new(CreateQr.Create(SeriNo));
+
             screen.Show();
         }
     }

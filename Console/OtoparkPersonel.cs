@@ -10,21 +10,11 @@ using System.Windows.Forms;
 
 namespace Console
 {
-    public partial class UrovoK239GarantiTakip : Form
+    public partial class OtoparkPersonel : Form
     {
-        public UrovoK239GarantiTakip()
+        public OtoparkPersonel()
         {
             InitializeComponent();
-        }
-
-        private void UrovoK239GarantiTakip_Load(object sender, EventArgs e)
-        {
-
-        }
-
-        private void button3_Click(object sender, EventArgs e)
-        {
-
         }
 
         private void GeriBtn_Click(object sender, EventArgs e)
@@ -32,10 +22,6 @@ namespace Console
             Anasayfa anasayfa = new();
             anasayfa.Show();
             this.Close();
-        }
-
-        private void GonderBtn_Click(object sender, EventArgs e)
-        {
 
         }
     }

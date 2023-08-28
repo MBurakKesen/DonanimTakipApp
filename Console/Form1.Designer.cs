@@ -30,11 +30,11 @@
         {
             this.UrovoOnarimTakipBtn = new System.Windows.Forms.Button();
             this.HyteraEnvanterBtn = new System.Windows.Forms.Button();
-            this.UrovoGarantiTakipBtn = new System.Windows.Forms.Button();
             this.YaziciSeriNoBtn = new System.Windows.Forms.Button();
             this.AnasayfaLbl = new System.Windows.Forms.Label();
             this.YaziciVeSeriNumaraBtn = new System.Windows.Forms.Button();
             this.OnarımTakipBtn = new System.Windows.Forms.Button();
+            this.OtaparkPersonelBtn = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // UrovoOnarimTakipBtn
@@ -60,18 +60,6 @@
             this.HyteraEnvanterBtn.UseVisualStyleBackColor = true;
             this.HyteraEnvanterBtn.Click += new System.EventHandler(this.HyteraEnvanterBtn_Click);
             // 
-            // UrovoGarantiTakipBtn
-            // 
-            this.UrovoGarantiTakipBtn.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left)));
-            this.UrovoGarantiTakipBtn.Location = new System.Drawing.Point(21, 183);
-            this.UrovoGarantiTakipBtn.Name = "UrovoGarantiTakipBtn";
-            this.UrovoGarantiTakipBtn.Size = new System.Drawing.Size(215, 97);
-            this.UrovoGarantiTakipBtn.TabIndex = 3;
-            this.UrovoGarantiTakipBtn.Text = "Urovo Garanti Takip";
-            this.UrovoGarantiTakipBtn.UseVisualStyleBackColor = true;
-            this.UrovoGarantiTakipBtn.Click += new System.EventHandler(this.UrovoGarantiTakipBtn_Click);
-            // 
             // YaziciSeriNoBtn
             // 
             this.YaziciSeriNoBtn.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
@@ -87,17 +75,17 @@
             // AnasayfaLbl
             // 
             this.AnasayfaLbl.AutoSize = true;
-            this.AnasayfaLbl.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.AnasayfaLbl.Location = new System.Drawing.Point(625, 398);
+            this.AnasayfaLbl.Font = new System.Drawing.Font("Sitka Banner", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point);
+            this.AnasayfaLbl.Location = new System.Drawing.Point(658, 387);
             this.AnasayfaLbl.Name = "AnasayfaLbl";
-            this.AnasayfaLbl.Size = new System.Drawing.Size(198, 28);
+            this.AnasayfaLbl.Size = new System.Drawing.Size(166, 29);
             this.AnasayfaLbl.TabIndex = 6;
-            this.AnasayfaLbl.Text = "Developed by Stajyer";
+            this.AnasayfaLbl.Text = "Developed By MBK";
             this.AnasayfaLbl.Click += new System.EventHandler(this.AnasayfaLbl_Click);
             // 
             // YaziciVeSeriNumaraBtn
             // 
-            this.YaziciVeSeriNumaraBtn.Location = new System.Drawing.Point(21, 329);
+            this.YaziciVeSeriNumaraBtn.Location = new System.Drawing.Point(362, 329);
             this.YaziciVeSeriNumaraBtn.Name = "YaziciVeSeriNumaraBtn";
             this.YaziciVeSeriNumaraBtn.Size = new System.Drawing.Size(215, 97);
             this.YaziciVeSeriNumaraBtn.TabIndex = 7;
@@ -109,26 +97,36 @@
             // 
             this.OnarımTakipBtn.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.OnarımTakipBtn.Location = new System.Drawing.Point(362, 329);
+            this.OnarımTakipBtn.Location = new System.Drawing.Point(21, 183);
             this.OnarımTakipBtn.Name = "OnarımTakipBtn";
             this.OnarımTakipBtn.Size = new System.Drawing.Size(215, 97);
             this.OnarımTakipBtn.TabIndex = 8;
-            this.OnarımTakipBtn.Text = "Onarım Takip";
+            this.OnarımTakipBtn.Text = "Hytera Onarım Takip";
             this.OnarımTakipBtn.UseVisualStyleBackColor = true;
             this.OnarımTakipBtn.Click += new System.EventHandler(this.OnarımTakipBtn_Click);
+            // 
+            // OtaparkPersonelBtn
+            // 
+            this.OtaparkPersonelBtn.Location = new System.Drawing.Point(21, 329);
+            this.OtaparkPersonelBtn.Name = "OtaparkPersonelBtn";
+            this.OtaparkPersonelBtn.Size = new System.Drawing.Size(215, 97);
+            this.OtaparkPersonelBtn.TabIndex = 9;
+            this.OtaparkPersonelBtn.Text = "Otopark Personel ";
+            this.OtaparkPersonelBtn.UseVisualStyleBackColor = true;
+            this.OtaparkPersonelBtn.Click += new System.EventHandler(this.OtaparkPersonelBtn_Click);
             // 
             // Anasayfa
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(846, 473);
+            this.Controls.Add(this.OtaparkPersonelBtn);
             this.Controls.Add(this.OnarımTakipBtn);
             this.Controls.Add(this.YaziciVeSeriNumaraBtn);
             this.Controls.Add(this.YaziciSeriNoBtn);
             this.Controls.Add(this.AnasayfaLbl);
             this.Controls.Add(this.HyteraEnvanterBtn);
             this.Controls.Add(this.UrovoOnarimTakipBtn);
-            this.Controls.Add(this.UrovoGarantiTakipBtn);
             this.MaximizeBox = false;
             this.Name = "Anasayfa";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
@@ -143,10 +141,10 @@
         #endregion
         private Button UrovoOnarimTakipBtn;
         private Button HyteraEnvanterBtn;
-        private Button UrovoGarantiTakipBtn;
         private Button YaziciSeriNoBtn;
         private Label AnasayfaLbl;
         private Button YaziciVeSeriNumaraBtn;
         private Button OnarımTakipBtn;
+        private Button OtaparkPersonelBtn;
     }
 }
