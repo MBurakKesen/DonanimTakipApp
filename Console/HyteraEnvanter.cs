@@ -83,14 +83,17 @@ namespace Console
             string SeriNo = Convert.ToString(selectedRow.Cells["SeriNo"].Value);
             string IsimVeSoyisim = selectedRow.Cells["IsimVeSoyisim"].Value.ToString();
 
+
             _manager.Update(new HyteraPerson { Id = Convert.ToInt32(Id), IsimVeSoyisim = IsimVeSoyisim, SeriNo = SeriNo });
 
-            MessageBox.Show("Seçili Veri Güncellendi");
+            MessageBox.Show("Seçili Veri Güncellendi \n Yazıcı güncellemesi burdan yapılamaz");
+
+           
 
         }
 
              
-
+        
         private void HyteraEnvanterView_Enter(object sender, EventArgs e)
         {
             int selectedrowindex = HyteraEnvanterView.SelectedCells[0].RowIndex;

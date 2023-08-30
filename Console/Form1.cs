@@ -32,8 +32,8 @@ namespace Console
 
         private void UrovoOnarimTakipBtn_Click(object sender, EventArgs e)
         {
-            UcretliOnarimTakip ucretliOnarimTakip = new();
-            ucretliOnarimTakip.Show();
+            UrovoK239GarantiTakip urovoK239GarantiTakip = new();
+            urovoK239GarantiTakip.Show();
             this.Hide();
         }
 

@@ -62,8 +62,7 @@
             // 
             // YaziciSeriNoBtn
             // 
-            this.YaziciSeriNoBtn.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Right)));
+            this.YaziciSeriNoBtn.Anchor = System.Windows.Forms.AnchorStyles.Right;
             this.YaziciSeriNoBtn.Location = new System.Drawing.Point(362, 183);
             this.YaziciSeriNoBtn.Name = "YaziciSeriNoBtn";
             this.YaziciSeriNoBtn.Size = new System.Drawing.Size(215, 97);
@@ -74,6 +73,7 @@
             // 
             // AnasayfaLbl
             // 
+            this.AnasayfaLbl.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.AnasayfaLbl.AutoSize = true;
             this.AnasayfaLbl.Font = new System.Drawing.Font("Sitka Banner", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point);
             this.AnasayfaLbl.Location = new System.Drawing.Point(658, 387);
@@ -85,6 +85,7 @@
             // 
             // YaziciVeSeriNumaraBtn
             // 
+            this.YaziciVeSeriNumaraBtn.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.YaziciVeSeriNumaraBtn.Location = new System.Drawing.Point(362, 329);
             this.YaziciVeSeriNumaraBtn.Name = "YaziciVeSeriNumaraBtn";
             this.YaziciVeSeriNumaraBtn.Size = new System.Drawing.Size(215, 97);
@@ -95,8 +96,7 @@
             // 
             // OnarımTakipBtn
             // 
-            this.OnarımTakipBtn.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Right)));
+            this.OnarımTakipBtn.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.OnarımTakipBtn.Location = new System.Drawing.Point(21, 183);
             this.OnarımTakipBtn.Name = "OnarımTakipBtn";
             this.OnarımTakipBtn.Size = new System.Drawing.Size(215, 97);
@@ -107,6 +107,7 @@
             // 
             // OtaparkPersonelBtn
             // 
+            this.OtaparkPersonelBtn.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.OtaparkPersonelBtn.Location = new System.Drawing.Point(21, 329);
             this.OtaparkPersonelBtn.Name = "OtaparkPersonelBtn";
             this.OtaparkPersonelBtn.Size = new System.Drawing.Size(215, 97);

@@ -27,7 +27,15 @@ namespace DataAccess
                 context.SaveChanges();
             }
         }
-        public void Update(Onarim onarim) { }
+        public void Update(Onarim onarim) {
+            using (DonanımTakipContext context = new DonanımTakipContext())
+            {
+                var updated = context.Entry(onarim);
+                updated.State = EntityState.Modified;
+                context.SaveChanges();
+            }
+
+        }
         public List<Onarim> GetAll(Expression<Func<Onarim, bool>> filter=null) {
             using (DonanımTakipContext context = new DonanımTakipContext())
             {

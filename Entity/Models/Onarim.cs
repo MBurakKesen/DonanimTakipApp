@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Microsoft.EntityFrameworkCore;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -16,9 +17,9 @@ namespace Entity.Models
         public string YapilanIslem { get; set; }
         public DateTime GonderilisTarihi { get; set; }
         public int KargoTakipNo { get; set; }
-        public DateTime? GelisTarihi { get; set; }
-        public DateTime? GarantiBitisTarihi { get; set; }
-        public int? KalanSureAy { get; set; }
-        public int? KalanSureGun { get; set; }
+        public DateTime GelisTarihi { get; set; }
+        public DateTime GarantiBitisTarihi { get; set; }
+        public int KalanSureAy { get; set; }
+        public int KalanSureGun { get; set; }
     }
 }

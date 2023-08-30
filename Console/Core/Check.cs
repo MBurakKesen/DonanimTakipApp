@@ -35,9 +35,23 @@ namespace Console.Core
                 }
             }
             return obj;
+
         }
-      
-       
+
+        //public static Color ChecLastMount(this int mount, DataGridView view)
+        //{
+        //    if (mount == 0)
+        //    {
+        //        return view.Row.BackColor = Color.Red;
+
+        //    }
+        //    else
+        //    {
+        //        return view.DefaultCellStyle.BackColor = Color.Green;
+        //    }
+        //}
+
+
     }
     
 }
