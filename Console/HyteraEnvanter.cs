@@ -4,6 +4,7 @@ using Console.Core.ImportExcel;
 using Console.Core.QrOluştur;
 using Entity.DTO;
 using Entity.Models;
+using Microsoft.EntityFrameworkCore.Metadata;
 using Microsoft.EntityFrameworkCore.Metadata.Internal;
 using System;
 using System.Collections.Generic;
@@ -20,16 +21,32 @@ namespace Console
     public partial class HyteraEnvanter : Form
     {
         HyteraPersonManager _manager = new(new());
-        DataGridView view;
+        List<HyteraDto> _list;
+        List<HyteraDto> liste=new List<HyteraDto>();
+
+      
         public HyteraEnvanter()
         {
             InitializeComponent();
+            
+
+        }
+        private void Refresh(List<HyteraDto> mainList)
+        {
+            _list = mainList;
+            DataGridView view = HyteraEnvanterView;
+            view.DataSource = _list;
+            view.Columns["Id"].Visible = false;
         }
         private void HyteraEnvanter_Load(object sender, EventArgs e)
         {
-            view = HyteraEnvanterView;
-            view.DataSource = _manager.GetHyteraDtos();
-            ////view.Column["Id"].Visibile = false;
+            //List<HyteraDto> _list = _manager.GetHyteraDtos();
+            DataGridView view = HyteraEnvanterView;
+            //view.DataSource = _list;
+            Refresh(_manager.GetHyteraDtos());
+
+
+
 
 
             //foreach (var item in _manager.GetHyteraDtos())
@@ -136,6 +153,41 @@ namespace Console
             QRScreen screen = new(CreateQr.Create(SeriNo));
 
             screen.Show();
+        }
+
+        private void seriNumarasıTxt_TextChanged(object sender, EventArgs e)
+        {
+            
+            liste = _list.Where(p => p.SeriNo.ToString().StartsWith(seriNumarasıTxt.Text)).ToList();
+
+
+            Refresh(liste);
+
+        }
+
+        private void isimVeSoyisimTxt_TextChanged(object sender, EventArgs e)
+        {
+
+            liste = _list.Where(p => p.IsimVeSoyisim.ToLower().StartsWith(isimVeSoyisimTxt.Text.ToLower())).ToList();
+
+            Refresh(liste);
+        }
+
+        private void yaziciTxt_TextChanged(object sender, EventArgs e)
+        {
+            liste = _list.Where(p => p.Yazici.ToLower().StartsWith(yaziciTxt.Text.ToLower())).ToList();
+
+            Refresh(liste);
+            
+        }
+
+        private void temizleBtn_Click(object sender, EventArgs e)
+        {
+            seriNumarasıTxt.Text = " ";
+            isimVeSoyisimTxt.Text = " ";
+            yaziciTxt.Text = " ";
+            this.Close();
+            new HyteraEnvanter().Show();
         }
     }
 }

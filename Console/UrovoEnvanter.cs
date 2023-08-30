@@ -2,6 +2,7 @@
 using Console.Core.ExportFile;
 using Console.Core.ImportExcel;
 using Entity.Models;
+using Microsoft.EntityFrameworkCore.Metadata.Internal;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -30,6 +31,8 @@ namespace Console
             }
 
             YaziciDGV.DataSource = source;
+            YaziciDGV.Columns["Id"].Visible = false;
+
         }
         public UrovoEnvanter()
         {
@@ -81,10 +84,9 @@ namespace Console
                     Model = item.Cells[2].Value.ToString(),
                     TeslimTarih = Convert.ToDateTime(item.Cells[3].Value),
                     SeriNumarasi = item.Cells[4].Value.ToString()
-
                 });
 
-
+                
             };
             MessageBox.Show("Silindi");
             ReturnData();

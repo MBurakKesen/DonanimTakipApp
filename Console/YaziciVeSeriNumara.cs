@@ -32,6 +32,8 @@ namespace Console
         {
             view = YaziciVeSeriNumaralariDGV;
             YaziciVeSeriNumaralariDGV.DataSource = _Manager.GetAll();
+            view.Columns["Id"].Visible = false;
+
         }
 
         private void GeriBtn_Click(object sender, EventArgs e)

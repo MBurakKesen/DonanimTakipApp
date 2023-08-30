@@ -58,11 +58,11 @@ namespace DataAccess
             }
         }
 
-        public List<HyteraDto> GetHyteraDto()
+        public List<HyteraDto> GetHyteraDto(Expression<Func<HyteraPerson,bool>> fiterHytera=null)
         {
             using (DonanımTakipContext context = new())
             {
-                var result = from p in context.HyteraPersons
+                var result = from p in context.HyteraPersons.Where(fiterHytera)
                              join c in context.yaziciVeSeriNumaralaris
                                  on p.IsimVeSoyisim equals c.Personel
                                  select new HyteraDto
