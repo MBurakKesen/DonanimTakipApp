@@ -248,6 +248,7 @@
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "UcretliOnarimUrunEkleme";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "UcretliOnarimUrunEkleme";
             this.Load += new System.EventHandler(this.UcretliOnarimUrunEkleme_Load);
             this.ResumeLayout(false);

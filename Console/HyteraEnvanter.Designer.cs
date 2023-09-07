@@ -36,7 +36,6 @@
             this.GuncelleBtn = new System.Windows.Forms.Button();
             this.HyteraEnvanterView = new System.Windows.Forms.DataGridView();
             this.QrBtn = new System.Windows.Forms.Button();
-            this.textBox1 = new System.Windows.Forms.TextBox();
             this.seriNumarasıTxt = new System.Windows.Forms.TextBox();
             this.isimVeSoyisimTxt = new System.Windows.Forms.TextBox();
             this.yaziciTxt = new System.Windows.Forms.TextBox();
@@ -78,7 +77,7 @@
             // EkleBtn
             // 
             this.EkleBtn.Anchor = System.Windows.Forms.AnchorStyles.Right;
-            this.EkleBtn.Location = new System.Drawing.Point(1262, 377);
+            this.EkleBtn.Location = new System.Drawing.Point(1204, 300);
             this.EkleBtn.Name = "EkleBtn";
             this.EkleBtn.Size = new System.Drawing.Size(94, 29);
             this.EkleBtn.TabIndex = 3;
@@ -89,7 +88,7 @@
             // SilBtn
             // 
             this.SilBtn.Anchor = System.Windows.Forms.AnchorStyles.Right;
-            this.SilBtn.Location = new System.Drawing.Point(1262, 444);
+            this.SilBtn.Location = new System.Drawing.Point(1204, 367);
             this.SilBtn.Name = "SilBtn";
             this.SilBtn.Size = new System.Drawing.Size(94, 29);
             this.SilBtn.TabIndex = 4;
@@ -100,7 +99,7 @@
             // GuncelleBtn
             // 
             this.GuncelleBtn.Anchor = System.Windows.Forms.AnchorStyles.Right;
-            this.GuncelleBtn.Location = new System.Drawing.Point(1262, 525);
+            this.GuncelleBtn.Location = new System.Drawing.Point(1204, 448);
             this.GuncelleBtn.Name = "GuncelleBtn";
             this.GuncelleBtn.Size = new System.Drawing.Size(94, 29);
             this.GuncelleBtn.TabIndex = 5;
@@ -120,7 +119,7 @@
             this.HyteraEnvanterView.RowHeadersWidth = 51;
             this.HyteraEnvanterView.RowTemplate.Height = 29;
             this.HyteraEnvanterView.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.HyteraEnvanterView.Size = new System.Drawing.Size(1185, 549);
+            this.HyteraEnvanterView.Size = new System.Drawing.Size(1127, 394);
             this.HyteraEnvanterView.TabIndex = 7;
             this.HyteraEnvanterView.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.HyteraEnvanterView_CellContentClick);
             // 
@@ -134,16 +133,9 @@
             this.QrBtn.UseVisualStyleBackColor = true;
             this.QrBtn.Click += new System.EventHandler(this.QrBtn_Click);
             // 
-            // textBox1
-            // 
-            this.textBox1.Location = new System.Drawing.Point(53, 117);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(125, 27);
-            this.textBox1.TabIndex = 9;
-            // 
             // seriNumarasıTxt
             // 
-            this.seriNumarasıTxt.Location = new System.Drawing.Point(380, 115);
+            this.seriNumarasıTxt.Location = new System.Drawing.Point(144, 118);
             this.seriNumarasıTxt.Name = "seriNumarasıTxt";
             this.seriNumarasıTxt.PlaceholderText = "Seri Numarası";
             this.seriNumarasıTxt.Size = new System.Drawing.Size(250, 27);
@@ -152,7 +144,7 @@
             // 
             // isimVeSoyisimTxt
             // 
-            this.isimVeSoyisimTxt.Location = new System.Drawing.Point(665, 115);
+            this.isimVeSoyisimTxt.Location = new System.Drawing.Point(480, 119);
             this.isimVeSoyisimTxt.Name = "isimVeSoyisimTxt";
             this.isimVeSoyisimTxt.PlaceholderText = "İsim ve Soyisim";
             this.isimVeSoyisimTxt.Size = new System.Drawing.Size(252, 27);
@@ -161,7 +153,7 @@
             // 
             // yaziciTxt
             // 
-            this.yaziciTxt.Location = new System.Drawing.Point(965, 115);
+            this.yaziciTxt.Location = new System.Drawing.Point(858, 119);
             this.yaziciTxt.Name = "yaziciTxt";
             this.yaziciTxt.PlaceholderText = "Yazici";
             this.yaziciTxt.Size = new System.Drawing.Size(229, 27);
@@ -170,7 +162,7 @@
             // 
             // temizleBtn
             // 
-            this.temizleBtn.Location = new System.Drawing.Point(234, 115);
+            this.temizleBtn.Location = new System.Drawing.Point(36, 117);
             this.temizleBtn.Name = "temizleBtn";
             this.temizleBtn.Size = new System.Drawing.Size(83, 29);
             this.temizleBtn.TabIndex = 13;
@@ -182,12 +174,11 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1379, 711);
+            this.ClientSize = new System.Drawing.Size(1321, 556);
             this.Controls.Add(this.temizleBtn);
             this.Controls.Add(this.yaziciTxt);
             this.Controls.Add(this.isimVeSoyisimTxt);
             this.Controls.Add(this.seriNumarasıTxt);
-            this.Controls.Add(this.textBox1);
             this.Controls.Add(this.QrBtn);
             this.Controls.Add(this.HyteraEnvanterView);
             this.Controls.Add(this.GuncelleBtn);
@@ -217,7 +208,6 @@
         private Button GuncelleBtn;
         private DataGridView HyteraEnvanterView;
         private Button QrBtn;
-        private TextBox textBox1;
         private TextBox seriNumarasıTxt;
         private TextBox isimVeSoyisimTxt;
         private TextBox yaziciTxt;

@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Entity.Models
 {
-    public class HyteraPerson
+    public class HyteraPerson:IEntity
     {
         public int Id { get; set; }
         public string SeriNo { get; set; }

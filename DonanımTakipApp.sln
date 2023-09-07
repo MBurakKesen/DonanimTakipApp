@@ -7,7 +7,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Entity", "Entity\Entity.csp
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DataAccess", "DataAccess\DataAccess.csproj", "{97FDA2A4-E700-4A67-89FE-300F0DE98802}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AppBussiness", "AppBussiness\AppBussiness.csproj", "{054BCD15-32E2-431B-8F2C-1028594734AB}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Bussiness", "AppBussiness\Bussiness.csproj", "{054BCD15-32E2-431B-8F2C-1028594734AB}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Console", "Console\Console.csproj", "{0D795E03-0056-4E21-B12A-022BCE4BF394}"
 EndProject

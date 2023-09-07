@@ -34,7 +34,7 @@
             this.SeriNumarasiTxt = new System.Windows.Forms.TextBox();
             this.YaziciCbx = new System.Windows.Forms.ComboBox();
             this.EkleBtn = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
+            this.geriBtn = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // SicilNotxt
@@ -92,21 +92,22 @@
             this.EkleBtn.UseVisualStyleBackColor = true;
             this.EkleBtn.Click += new System.EventHandler(this.EkleBtn_Click);
             // 
-            // button1
+            // geriBtn
             // 
-            this.button1.Location = new System.Drawing.Point(12, 12);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(39, 32);
-            this.button1.TabIndex = 7;
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.geriBtn.Location = new System.Drawing.Point(12, 12);
+            this.geriBtn.Name = "geriBtn";
+            this.geriBtn.Size = new System.Drawing.Size(51, 32);
+            this.geriBtn.TabIndex = 7;
+            this.geriBtn.Text = "GERİ";
+            this.geriBtn.UseVisualStyleBackColor = true;
+            this.geriBtn.Click += new System.EventHandler(this.geriBtn_Click);
             // 
             // YaziciVeSeriNumaralarıEkleme
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(436, 450);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.geriBtn);
             this.Controls.Add(this.EkleBtn);
             this.Controls.Add(this.YaziciCbx);
             this.Controls.Add(this.SeriNumarasiTxt);
@@ -116,6 +117,7 @@
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "YaziciVeSeriNumaralarıEkleme";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "EKLEME SAYFASI";
             this.TransparencyKey = System.Drawing.Color.Green;
             this.Load += new System.EventHandler(this.YaziciVeSeriNumaralarıEkleme_Load);
@@ -132,6 +134,6 @@
         private TextBox SeriNumarasiTxt;
         private ComboBox YaziciCbx;
         private Button EkleBtn;
-        private Button button1;
+        private Button geriBtn;
     }
 }

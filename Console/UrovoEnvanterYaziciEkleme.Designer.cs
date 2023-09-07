@@ -145,6 +145,7 @@
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "UrovoEnvanterYaziciEkleme";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "EKLEME SAYFASI";
             this.Load += new System.EventHandler(this.UrovoEnvanterYaziciEkleme_Load);
             this.ResumeLayout(false);

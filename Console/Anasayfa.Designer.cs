@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Anasayfa));
             this.UrovoOnarimTakipBtn = new System.Windows.Forms.Button();
             this.HyteraEnvanterBtn = new System.Windows.Forms.Button();
             this.YaziciSeriNoBtn = new System.Windows.Forms.Button();
@@ -76,11 +77,11 @@
             this.AnasayfaLbl.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.AnasayfaLbl.AutoSize = true;
             this.AnasayfaLbl.Font = new System.Drawing.Font("Sitka Banner", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point);
-            this.AnasayfaLbl.Location = new System.Drawing.Point(658, 387);
+            this.AnasayfaLbl.Location = new System.Drawing.Point(514, 435);
             this.AnasayfaLbl.Name = "AnasayfaLbl";
-            this.AnasayfaLbl.Size = new System.Drawing.Size(166, 29);
+            this.AnasayfaLbl.Size = new System.Drawing.Size(330, 29);
             this.AnasayfaLbl.TabIndex = 6;
-            this.AnasayfaLbl.Text = "Developed By MBK";
+            this.AnasayfaLbl.Text = "Developed By Muhammed Burak Kesen";
             this.AnasayfaLbl.Click += new System.EventHandler(this.AnasayfaLbl_Click);
             // 
             // YaziciVeSeriNumaraBtn
@@ -128,6 +129,7 @@
             this.Controls.Add(this.AnasayfaLbl);
             this.Controls.Add(this.HyteraEnvanterBtn);
             this.Controls.Add(this.UrovoOnarimTakipBtn);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
             this.Name = "Anasayfa";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;

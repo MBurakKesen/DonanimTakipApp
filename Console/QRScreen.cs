@@ -21,26 +21,11 @@ namespace Console
 
         private void QrPic_Click(object sender, EventArgs e)
         {
-            //CaptureScreen();
-            //qrPrint.Print();
-            //qrPrint.PrintPage += new PrintPageEventHandler(printDocument1_PrintPage);
-
             base.PrintForm();
             this.Close();
         }
 
-        //private void printDocument1_PrintPage(object sender, System.Drawing.Printing.PrintPageEventArgs e)
-        //{
-        //    e.Graphics.DrawImage(bitmap, 0, 0);
-        //}
-        //private void CaptureScreen()
-        //{
-        //    Graphics myGraphics = this.CreateGraphics();
-        //    Size s = this.Size;
-        //    bitmap = new Bitmap(s.Width, s.Height, myGraphics);
-        //    Graphics memoryGraphics = Graphics.FromImage(bitmap);
-        //    memoryGraphics.CopyFromScreen(this.Location.X, this.Location.Y, 0, 0, s);
-        //}
+       
     }
     public class CustomForm : Form
     {

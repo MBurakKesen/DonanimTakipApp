@@ -32,6 +32,10 @@ namespace AppBussiness
         {
             return _yazici.GetAll(filter);
         }
+        public void Update(Yazici yazici)
+        {
+            _yazici.Update(yazici);
+        }
     }
 
 }

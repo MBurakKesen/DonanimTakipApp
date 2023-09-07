@@ -293,6 +293,20 @@
         }
         "Shortcut"
         {
+            "{970C0BB2-C7D0-45D7-ABFA-7EC378858BC0}:_ABC775EA19E4457694BCF16C9A2965E7"
+            {
+            "Name" = "8:Donanım Takip"
+            "Arguments" = "8:"
+            "Description" = "8:"
+            "ShowCmd" = "3:1"
+            "IconIndex" = "3:0"
+            "Transitive" = "11:FALSE"
+            "Target" = "8:_2BE457123BF741EFB49DF53FC3409EC8"
+            "Folder" = "8:_0C01A7E55CBA40CBBA580CD17F10E20D"
+            "WorkingFolder" = "8:_82928353EB5B448683CEFAB2EDEC3FA5"
+            "Icon" = "8:"
+            "Feature" = "8:"
+            }
         }
         "UserInterface"
         {

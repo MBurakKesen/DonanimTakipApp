@@ -18,11 +18,9 @@ namespace Console
     public partial class UrovoEnvanter
         : Form
     {
-        YaziciManager _manager;
+        YaziciManager _manager =new(new());
         public void ReturnData()
-        {
-            _manager = new(new());
-
+        {       
             // var bindingList = new BindingList<Yazici>();
             var source = new System.Windows.Forms.BindingSource { DataSource = _manager.GetAll() };
             foreach (var item in _manager.GetAll())
@@ -94,6 +92,24 @@ namespace Console
 
         private void YaziciDGV_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
+
+        }
+
+        private void guncelleBtn_Click(object sender, EventArgs e)
+        {
+            Yazici yazici = new();
+
+            int selectedrowindex = YaziciDGV.SelectedCells[0].RowIndex;
+
+            DataGridViewRow selectedRow = YaziciDGV.Rows[selectedrowindex];
+            yazici.Id = Convert.ToInt32(selectedRow.Cells["Id"].Value);
+            yazici.Marka = Convert.ToString(selectedRow.Cells["Marka"].Value);
+            yazici.TeslimTarih= Convert.ToDateTime(selectedRow.Cells["TeslimTarih"].Value.ToString());
+            yazici.Model = selectedRow.Cells["Model"].Value.ToString();
+            yazici.SeriNumarasi = selectedRow.Cells["SeriNumarasi"].Value.ToString();
+
+            _manager.Update(yazici);
+            MessageBox.Show("Veri Güncellendi");
 
         }
     }

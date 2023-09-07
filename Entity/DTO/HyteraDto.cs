@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Entity.DTO
 {
-    public class HyteraDto
+    public class HyteraDto : IEntity
     {
         public int Id { get; set; }
         public string SeriNo { get; set; }

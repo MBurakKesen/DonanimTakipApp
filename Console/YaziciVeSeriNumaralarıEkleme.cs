@@ -1,4 +1,6 @@
-﻿using System;
+﻿using AppBussiness;
+using Entity.Models;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -12,6 +14,7 @@ namespace Console
 {
     public partial class YaziciVeSeriNumaralarıEkleme : Form
     {
+        YaziciVeSeriNumaralariManager _manager = new(new());
         public YaziciVeSeriNumaralarıEkleme()
         {
             InitializeComponent();
@@ -22,7 +25,7 @@ namespace Console
 
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void geriBtn_Click(object sender, EventArgs e)
         {
             YaziciVeSeriNumara numara = new();
             numara.Show();
@@ -36,7 +39,26 @@ namespace Console
 
         private void EkleBtn_Click(object sender, EventArgs e)
         {
+            try
+            {
+                YaziciVeSeriNumaralari yaziciVeSeriNumaralari = new();
+                yaziciVeSeriNumaralari.Amir = AmirTxt.Text;
+                yaziciVeSeriNumaralari.SeriNumarasi = SeriNumarasiTxt.Text;
+                yaziciVeSeriNumaralari.Personel = PersonelTxt.Text;
+                yaziciVeSeriNumaralari.SicilNo = SicilNotxt.Text;
+                yaziciVeSeriNumaralari.Yazici = YaziciCbx.Text;
 
+                _manager.Add(yaziciVeSeriNumaralari);
+
+                MessageBox.Show("Eklendi");
+                this.Close();
+                new YaziciVeSeriNumara().Show();
+            }
+            catch (Exception)
+            {
+                MessageBox.Show("Hata Oluştu");
+                throw;
+            }
         }
     }
 }

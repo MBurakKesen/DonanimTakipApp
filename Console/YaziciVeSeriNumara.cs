@@ -31,8 +31,9 @@ namespace Console
         private void YaziciVeSeriNumara_Load(object sender, EventArgs e)
         {
             view = YaziciVeSeriNumaralariDGV;
-            YaziciVeSeriNumaralariDGV.DataSource = _Manager.GetAll();
+            YaziciVeSeriNumaralariDGV.DataSource = _Manager.GetDeatails();
             view.Columns["Id"].Visible = false;
+           
 
         }
 

@@ -31,7 +31,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\..\UpdateProject\UpdateProject\UpdateProject.csproj" />
-    <ProjectReference Include="..\AppBussiness\AppBussiness.csproj" />
+    <ProjectReference Include="..\AppBussiness\Bussiness.csproj" />
     <ProjectReference Include="..\Entity\Entity.csproj" />
   </ItemGroup>
 

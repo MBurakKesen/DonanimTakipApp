@@ -34,6 +34,7 @@
             this.IceriAktarBtn = new System.Windows.Forms.Button();
             this.DisariAktarBtn = new System.Windows.Forms.Button();
             this.GeriBtn = new System.Windows.Forms.Button();
+            this.guncelleBtn = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.YaziciDGV)).BeginInit();
             this.SuspendLayout();
             // 
@@ -66,7 +67,7 @@
             // SilBtn
             // 
             this.SilBtn.Anchor = System.Windows.Forms.AnchorStyles.Right;
-            this.SilBtn.Location = new System.Drawing.Point(858, 249);
+            this.SilBtn.Location = new System.Drawing.Point(858, 208);
             this.SilBtn.Name = "SilBtn";
             this.SilBtn.Size = new System.Drawing.Size(109, 47);
             this.SilBtn.TabIndex = 2;
@@ -106,12 +107,23 @@
             this.GeriBtn.UseVisualStyleBackColor = true;
             this.GeriBtn.Click += new System.EventHandler(this.GeriBtn_Click);
             // 
+            // guncelleBtn
+            // 
+            this.guncelleBtn.Location = new System.Drawing.Point(858, 306);
+            this.guncelleBtn.Name = "guncelleBtn";
+            this.guncelleBtn.Size = new System.Drawing.Size(109, 47);
+            this.guncelleBtn.TabIndex = 6;
+            this.guncelleBtn.Text = "GÜNCELLE";
+            this.guncelleBtn.UseVisualStyleBackColor = true;
+            this.guncelleBtn.Click += new System.EventHandler(this.guncelleBtn_Click);
+            // 
             // UrovoEnvanter
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSize = true;
             this.ClientSize = new System.Drawing.Size(1020, 521);
+            this.Controls.Add(this.guncelleBtn);
             this.Controls.Add(this.GeriBtn);
             this.Controls.Add(this.DisariAktarBtn);
             this.Controls.Add(this.IceriAktarBtn);
@@ -135,5 +147,6 @@
         private Button IceriAktarBtn;
         private Button DisariAktarBtn;
         private Button GeriBtn;
+        private Button guncelleBtn;
     }
 }

@@ -22,15 +22,11 @@ namespace Console
     {
         HyteraPersonManager _manager = new(new());
         List<HyteraDto> _list;
-        List<HyteraDto> liste=new List<HyteraDto>();
-
-      
+        List<HyteraDto> liste=new List<HyteraDto>();     
         public HyteraEnvanter()
         {
             InitializeComponent();
-            
-
-        }
+                }
         private void Refresh(List<HyteraDto> mainList)
         {
             _list = mainList;
@@ -44,10 +40,6 @@ namespace Console
             DataGridView view = HyteraEnvanterView;
             //view.DataSource = _list;
             Refresh(_manager.GetHyteraDtos());
-
-
-
-
 
             //foreach (var item in _manager.GetHyteraDtos())
             //{
@@ -73,7 +65,6 @@ namespace Console
         {
             ExportFile.ExportFileToExcel(this.HyteraEnvanterView);
         }
-
         private void SilBtn_Click(object sender, EventArgs e)
         {
            
@@ -90,8 +81,7 @@ namespace Console
 
             MessageBox.Show("Silindi ");
            
-        }
-   
+        } 
         private void GuncelleBtn_Click(object sender, EventArgs e)
         {
             int selectedrowindex = HyteraEnvanterView.SelectedCells[0].RowIndex;
@@ -107,9 +97,7 @@ namespace Console
 
            
 
-        }
-
-             
+        }           
         
         private void HyteraEnvanterView_Enter(object sender, EventArgs e)
         {
@@ -130,20 +118,7 @@ namespace Console
         }
 
         private void QrBtn_Click(object sender, EventArgs e)
-        {
-            //HyteraDto hyteraDto = new();
-
-            //foreach (DataGridViewRow item in this.HyteraEnvanterView.SelectedRows)
-            //{
-            //   // hyteraDto.SeriNo = item.Cells[1].Value.ToString();
-            //    //hyteraDto.IsimVeSoyisim = item.Cells[1].Value.ToString();
-            //    hyteraDto.Yazici = item.Cells[3].Value.ToString();
-
-            //}
-
-            //CreateQr.Create<HyteraDto>(hyteraDto);
-
-
+        {          
             string SeriNo="";
             foreach (DataGridViewRow item in this.HyteraEnvanterView.SelectedRows)
             {
@@ -156,36 +131,24 @@ namespace Console
         }
 
         private void seriNumarasıTxt_TextChanged(object sender, EventArgs e)
-        {
-            
+        {         
             liste = _list.Where(p => p.SeriNo.ToString().StartsWith(seriNumarasıTxt.Text)).ToList();
-
-
             Refresh(liste);
-
         }
-
         private void isimVeSoyisimTxt_TextChanged(object sender, EventArgs e)
         {
-
             liste = _list.Where(p => p.IsimVeSoyisim.ToLower().StartsWith(isimVeSoyisimTxt.Text.ToLower())).ToList();
-
             Refresh(liste);
         }
 
         private void yaziciTxt_TextChanged(object sender, EventArgs e)
         {
             liste = _list.Where(p => p.Yazici.ToLower().StartsWith(yaziciTxt.Text.ToLower())).ToList();
-
             Refresh(liste);
             
         }
-
         private void temizleBtn_Click(object sender, EventArgs e)
         {
-            seriNumarasıTxt.Text = " ";
-            isimVeSoyisimTxt.Text = " ";
-            yaziciTxt.Text = " ";
             this.Close();
             new HyteraEnvanter().Show();
         }

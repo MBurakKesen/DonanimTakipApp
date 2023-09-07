@@ -21,14 +21,12 @@ namespace Console
         {
             InitializeComponent();
         }
-
         private void GeriBtn_Click(object sender, EventArgs e)
         {
             Anasayfa anasayfa = new();
             anasayfa.Show();
             this.Close();
         }
-
         private void EkleBtn_Click(object sender, EventArgs e)
         {
             UcretliOnarimUrunEkleme ekleme = new();
@@ -37,8 +35,6 @@ namespace Console
             
 
         }
-
-
         private void UcretliOnarimTakip_Load(object sender, EventArgs e)
         {
             foreach (var item in _manager.GetAll())
@@ -48,18 +44,14 @@ namespace Console
             }
 
         }
-
-
         private void OnarimTakipDgv_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
 
         }
-
         private void OnarimTakipDgv_RowsAdded(object sender, DataGridViewRowsAddedEventArgs e)
         {
 
         }
-
         private void OnarimTakipDgv_RowPrePaint(object sender, DataGridViewRowPrePaintEventArgs e)
         {
             if (Convert.ToInt32(OnarimTakipDgv.Rows[e.RowIndex].Cells[9].Value) < 1)
@@ -71,13 +63,11 @@ namespace Console
                 OnarimTakipDgv.Rows[e.RowIndex].DefaultCellStyle.BackColor = Color.Beige;
             }
         }
-
-
         public int MakeMount(TimeSpan years)
         {
-            if (years.TotalDays > 30)
+            if (years.TotalDays >= 30)
             {
-                return Convert.ToInt32(years.TotalDays / 30)-1;
+                return Convert.ToInt32(years.TotalDays / 30);
             }
             return 0;
         }
@@ -93,7 +83,6 @@ namespace Console
             return Convert.ToInt32(years.TotalDays);
 
         }
-
         private void GüncelleBtn_Click(object sender, EventArgs e)
         {
 
@@ -123,7 +112,6 @@ namespace Console
             new UcretliOnarimTakip().Show();
             this.Close();
         }
-
         private void SilBtn_Click(object sender, EventArgs e)
         {
             int selectedrowindex = OnarimTakipDgv.SelectedCells[0].RowIndex;

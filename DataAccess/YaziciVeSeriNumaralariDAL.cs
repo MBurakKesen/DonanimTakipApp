@@ -1,4 +1,5 @@
-﻿using Entity.Models;
+﻿using Entity.DTO;
+using Entity.Models;
 using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
@@ -55,6 +56,26 @@ namespace DataAccess
                 updated.State = EntityState.Modified;
                 context.SaveChanges();
             }
+        }
+        public List<YaziciDto> GetYaziciDto()
+        {
+            using(DonanımTakipContext context = new())
+            {
+                var result = from p in context.YaziciVeSeriNumaralaris
+                             join c in context.Otoparks
+                                 on p.Personel equals (c.Ad+" "+c.Soyad)
+                             select new YaziciDto
+                             {
+                                 Id = p.Id,
+                                 Personel = p.Personel,
+                                 SeriNumarasi = p.SeriNumarasi,
+                                 Amir=p.Amir,
+                                 Yazici = p.Yazici,
+                                 SicilNo=c.SicilNo
+                             };
+                return result.ToList();
+            }
+            
         }
     }
 }

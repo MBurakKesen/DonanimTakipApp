@@ -44,11 +44,15 @@ namespace DataAccess
         {
             using (DonanımTakipContext context = new DonanımTakipContext())
             {
-                return filter == null ? context.Set<HyteraPerson>().ToList() : context.Set<HyteraPerson>().Where(filter).ToList();
+                return filter == null 
+                    ? context.Set<HyteraPerson>().ToList() 
+                    : context.Set<HyteraPerson>()
+                    .Where(filter)
+                    .ToList();
                 context.SaveChanges();
             }
         }
-        public void Update(HyteraPerson hPerson)
+        public void Update(HyteraPerson hPerson)    
         {
             using (DonanımTakipContext context = new DonanımTakipContext())
             {
@@ -58,12 +62,11 @@ namespace DataAccess
             }
         }
 
-        public List<HyteraDto> GetHyteraDto(Expression<Func<HyteraPerson,bool>> fiterHytera=null)
-        {
+        public List<HyteraDto> GetHyteraDto() { 
             using (DonanımTakipContext context = new())
             {
-                var result = from p in context.HyteraPersons.Where(fiterHytera)
-                             join c in context.yaziciVeSeriNumaralaris
+                var result = from p in context.HyteraPersons
+                             join c in context.YaziciVeSeriNumaralaris
                                  on p.IsimVeSoyisim equals c.Personel
                                  select new HyteraDto
                                  {

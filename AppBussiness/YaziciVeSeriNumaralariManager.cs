@@ -1,4 +1,5 @@
 ﻿using DataAccess;
+using Entity.DTO;
 using Entity.Models;
 using System;
 using System.Collections.Generic;
@@ -35,6 +36,11 @@ namespace AppBussiness
         public void Update(YaziciVeSeriNumaralari yaziciVeSeriNumaralari)
         {
             _yaziciVeSeriNumaralariDAL.Update(yaziciVeSeriNumaralari);
+        }
+
+        public List<YaziciDto> GetDeatails()
+        {
+            return _yaziciVeSeriNumaralariDAL.GetYaziciDto();
         }
     }
 }

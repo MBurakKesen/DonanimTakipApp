@@ -1,4 +1,5 @@
-﻿using Entity.Models;
+﻿using Console.Core;
+using Entity.Models;
 using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
@@ -12,14 +13,16 @@ namespace DataAccess
     {
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
-            optionsBuilder.UseSqlServer(@"Server=LAPTOP-RE5ASPI1\SQLEXPRESS;Database=DonanimTakipApp;TrustServerCertificate=True;Trusted_Connection=True");
+            string path=ConnectionString.Connection();
+            optionsBuilder.UseSqlServer(path ?? @"Server=LAPTOP-RE5ASPI1\SQLEXPRESS;Database=DonanimTakipApp;TrustServerCertificate=True;Trusted_Connection=True");
         }
 
         public DbSet<HyteraPerson> HyteraPersons { get; set;}
         public DbSet<Yazici> Yazicies
         { get; set;}
-        public DbSet<YaziciVeSeriNumaralari> yaziciVeSeriNumaralaris { get; set;}
+        public DbSet<YaziciVeSeriNumaralari> YaziciVeSeriNumaralaris { get; set;}
         public DbSet<Onarim> Onarims { get; set;}
+        public DbSet<Otopark> Otoparks { get; set;}
        
     }
 }

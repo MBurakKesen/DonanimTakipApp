@@ -47,6 +47,8 @@
             this.SilBtn = new System.Windows.Forms.Button();
             this.bildiri1Lbl = new System.Windows.Forms.Label();
             this.bildiri2Lbl = new System.Windows.Forms.Label();
+            this.button1 = new System.Windows.Forms.Button();
+            this.button2 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.OnarimTakipDgv)).BeginInit();
             this.SuspendLayout();
             // 
@@ -62,10 +64,10 @@
             // 
             // GüncelleBtn
             // 
-            this.GüncelleBtn.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.GüncelleBtn.Location = new System.Drawing.Point(274, 1);
+            this.GüncelleBtn.Anchor = System.Windows.Forms.AnchorStyles.Right;
+            this.GüncelleBtn.Location = new System.Drawing.Point(952, 178);
             this.GüncelleBtn.Name = "GüncelleBtn";
-            this.GüncelleBtn.Size = new System.Drawing.Size(149, 76);
+            this.GüncelleBtn.Size = new System.Drawing.Size(101, 63);
             this.GüncelleBtn.TabIndex = 1;
             this.GüncelleBtn.Text = "GÜNCELLE";
             this.GüncelleBtn.UseVisualStyleBackColor = true;
@@ -73,9 +75,10 @@
             // 
             // OnarımaGonderBtn
             // 
-            this.OnarımaGonderBtn.Location = new System.Drawing.Point(85, 1);
+            this.OnarımaGonderBtn.Anchor = System.Windows.Forms.AnchorStyles.Right;
+            this.OnarımaGonderBtn.Location = new System.Drawing.Point(952, 52);
             this.OnarımaGonderBtn.Name = "OnarımaGonderBtn";
-            this.OnarımaGonderBtn.Size = new System.Drawing.Size(149, 76);
+            this.OnarımaGonderBtn.Size = new System.Drawing.Size(101, 63);
             this.OnarımaGonderBtn.TabIndex = 2;
             this.OnarımaGonderBtn.Text = "GÖNDER";
             this.OnarımaGonderBtn.UseVisualStyleBackColor = true;
@@ -106,7 +109,7 @@
             this.OnarimTakipDgv.Name = "OnarimTakipDgv";
             this.OnarimTakipDgv.RowHeadersWidth = 51;
             this.OnarimTakipDgv.RowTemplate.Height = 29;
-            this.OnarimTakipDgv.Size = new System.Drawing.Size(1030, 443);
+            this.OnarimTakipDgv.Size = new System.Drawing.Size(947, 453);
             this.OnarimTakipDgv.TabIndex = 3;
             this.OnarimTakipDgv.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.OnarimTakipDgv_CellContentClick);
             this.OnarimTakipDgv.RowPrePaint += new System.Windows.Forms.DataGridViewRowPrePaintEventHandler(this.OnarimTakipDgv_RowPrePaint);
@@ -187,10 +190,10 @@
             // 
             // SilBtn
             // 
-            this.SilBtn.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.SilBtn.Location = new System.Drawing.Point(462, 1);
+            this.SilBtn.Anchor = System.Windows.Forms.AnchorStyles.Right;
+            this.SilBtn.Location = new System.Drawing.Point(952, 302);
             this.SilBtn.Name = "SilBtn";
-            this.SilBtn.Size = new System.Drawing.Size(149, 76);
+            this.SilBtn.Size = new System.Drawing.Size(101, 64);
             this.SilBtn.TabIndex = 4;
             this.SilBtn.Text = "SİL";
             this.SilBtn.UseVisualStyleBackColor = true;
@@ -198,11 +201,10 @@
             // 
             // bildiri1Lbl
             // 
-            this.bildiri1Lbl.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Right)));
+            this.bildiri1Lbl.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.bildiri1Lbl.AutoSize = true;
             this.bildiri1Lbl.BackColor = System.Drawing.Color.IndianRed;
-            this.bildiri1Lbl.Location = new System.Drawing.Point(735, 16);
+            this.bildiri1Lbl.Location = new System.Drawing.Point(678, 9);
             this.bildiri1Lbl.Name = "bildiri1Lbl";
             this.bildiri1Lbl.Size = new System.Drawing.Size(55, 20);
             this.bildiri1Lbl.TabIndex = 5;
@@ -210,19 +212,41 @@
             // 
             // bildiri2Lbl
             // 
-            this.bildiri2Lbl.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.bildiri2Lbl.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.bildiri2Lbl.AutoSize = true;
-            this.bildiri2Lbl.Location = new System.Drawing.Point(793, 15);
+            this.bildiri2Lbl.Location = new System.Drawing.Point(736, 8);
             this.bildiri2Lbl.Name = "bildiri2Lbl";
             this.bildiri2Lbl.Size = new System.Drawing.Size(200, 20);
             this.bildiri2Lbl.TabIndex = 6;
             this.bildiri2Lbl.Text = "Garanti Süresi Bitmek Üzere !";
             // 
+            // button1
+            // 
+            this.button1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.button1.Location = new System.Drawing.Point(952, 419);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(101, 42);
+            this.button1.TabIndex = 7;
+            this.button1.Text = "Dışarı Aktar";
+            this.button1.UseVisualStyleBackColor = true;
+            // 
+            // button2
+            // 
+            this.button2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.button2.Location = new System.Drawing.Point(952, 467);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(101, 42);
+            this.button2.TabIndex = 8;
+            this.button2.Text = "İçeri Aktar";
+            this.button2.UseVisualStyleBackColor = true;
+            // 
             // UcretliOnarimTakip
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1030, 529);
+            this.ClientSize = new System.Drawing.Size(1057, 538);
+            this.Controls.Add(this.button2);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.bildiri2Lbl);
             this.Controls.Add(this.bildiri1Lbl);
             this.Controls.Add(this.SilBtn);
@@ -263,5 +287,7 @@
         private DataGridViewTextBoxColumn Id;
         private Label bildiri1Lbl;
         private Label bildiri2Lbl;
+        private Button button1;
+        private Button button2;
     }
 }

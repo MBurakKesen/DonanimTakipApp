@@ -82,9 +82,9 @@ namespace Console
 
         private void OtaparkPersonelBtn_Click(object sender, EventArgs e)
         {
-            OtoparkPersonel otoparkPersonel = new();
-            otoparkPersonel.Show();
-            this.Close();
+            OtoparkPersonel otopark = new();
+            otopark.Show();
+            this.Hide();
         }
     }
 }

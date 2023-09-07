@@ -124,6 +124,7 @@
             this.Controls.Add(this.SeriNoLbl);
             this.Controls.Add(this.SeriNoTxt);
             this.Name = "HyteraUrunEkle";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "HyteraUrunEkle";
             this.Load += new System.EventHandler(this.HyteraUrunEkle_Load);
             this.ResumeLayout(false);
