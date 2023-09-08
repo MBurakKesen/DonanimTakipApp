@@ -132,7 +132,7 @@
             this.Controls.Add(this.GeriBtn);
             this.Name = "YaziciVeSeriNumara";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "YaziciVeSeriNumara";
+            this.Text = "Yazıcılar Listesi";
             this.Load += new System.EventHandler(this.YaziciVeSeriNumara_Load);
             ((System.ComponentModel.ISupportInitialize)(this.YaziciVeSeriNumaralariDGV)).EndInit();
             this.ResumeLayout(false);

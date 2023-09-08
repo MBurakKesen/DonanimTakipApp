@@ -60,6 +60,10 @@ namespace Console
         private void ImportBtn_Click(object sender, EventArgs e)
         {
             ImportExcel.AddDB(ImportExcel.readExcel());
+            this.Close();
+            new HyteraEnvanter().Show();
+
+
         }
         private void DisaAktarBtn_Click(object sender, EventArgs e)
         {

@@ -28,23 +28,23 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.urovoOnarimDGV = new System.Windows.Forms.DataGridView();
             this.GeriBtn = new System.Windows.Forms.Button();
             this.GonderBtn = new System.Windows.Forms.Button();
             this.GuncelleBtn = new System.Windows.Forms.Button();
             this.SilBtn = new System.Windows.Forms.Button();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.urovoOnarimDGV)).BeginInit();
             this.SuspendLayout();
             // 
-            // dataGridView1
+            // urovoOnarimDGV
             // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(24, 55);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.RowHeadersWidth = 51;
-            this.dataGridView1.RowTemplate.Height = 29;
-            this.dataGridView1.Size = new System.Drawing.Size(990, 350);
-            this.dataGridView1.TabIndex = 0;
+            this.urovoOnarimDGV.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.urovoOnarimDGV.Location = new System.Drawing.Point(24, 55);
+            this.urovoOnarimDGV.Name = "urovoOnarimDGV";
+            this.urovoOnarimDGV.RowHeadersWidth = 51;
+            this.urovoOnarimDGV.RowTemplate.Height = 29;
+            this.urovoOnarimDGV.Size = new System.Drawing.Size(990, 350);
+            this.urovoOnarimDGV.TabIndex = 0;
             // 
             // GeriBtn
             // 
@@ -94,19 +94,19 @@
             this.Controls.Add(this.GuncelleBtn);
             this.Controls.Add(this.GonderBtn);
             this.Controls.Add(this.GeriBtn);
-            this.Controls.Add(this.dataGridView1);
+            this.Controls.Add(this.urovoOnarimDGV);
             this.Name = "UrovoK239GarantiTakip";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "UrovoK239GarantiTakip";
             this.Load += new System.EventHandler(this.UrovoK239GarantiTakip_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.urovoOnarimDGV)).EndInit();
             this.ResumeLayout(false);
 
         }
 
         #endregion
 
-        private DataGridView dataGridView1;
+        private DataGridView urovoOnarimDGV;
         private Button GeriBtn;
         private Button GonderBtn;
         private Button GuncelleBtn;

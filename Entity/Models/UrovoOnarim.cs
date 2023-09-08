@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Entity.Models
 {
-    public interface UrovoOnarim
+    public class UrovoOnarim:IEntity
     {
         public int Id { get; set; }
         public string SeriNo { get; set; }
@@ -18,7 +18,7 @@ namespace Entity.Models
         public DateTime GonderilisTarihi { get; set; }
         public int KargoTakipNo { get; set; }
         public DateTime ServisTarihi { get; set; }
-        public DateTime GarantiBaslangic { get; set; }
+        public DateTime GarantiBaslangicTarihi { get; set; }
         public DateTime GarantiBitisTarihi { get; set; }
         public int KalanSureAy { get; set; }
         public int KalanSureGun { get; set; }

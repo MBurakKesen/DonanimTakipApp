@@ -95,6 +95,7 @@
             this.eklemeBtn.TabIndex = 4;
             this.eklemeBtn.Text = "Ekle";
             this.eklemeBtn.UseVisualStyleBackColor = true;
+            this.eklemeBtn.Click += new System.EventHandler(this.eklemeBtn_Click);
             // 
             // silBtn
             // 
@@ -105,6 +106,7 @@
             this.silBtn.TabIndex = 5;
             this.silBtn.Text = "Sil";
             this.silBtn.UseVisualStyleBackColor = true;
+            this.silBtn.Click += new System.EventHandler(this.silBtn_Click);
             // 
             // guncelleBtn
             // 
@@ -130,7 +132,7 @@
             this.Controls.Add(this.otoparkDgv);
             this.Name = "OtoparkPersonel";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Otopark";
+            this.Text = "Otopark Personel Listesi";
             this.Load += new System.EventHandler(this.OtoparkPersonel_Load);
             ((System.ComponentModel.ISupportInitialize)(this.otoparkDgv)).EndInit();
             this.ResumeLayout(false);

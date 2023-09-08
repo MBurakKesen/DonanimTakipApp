@@ -132,7 +132,7 @@
             this.Controls.Add(this.YaziciDGV);
             this.Name = "UrovoEnvanter";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Yazıcılar";
+            this.Text = "Urovo Envanter";
             this.Load += new System.EventHandler(this.UrovoEnvanter_Load);
             ((System.ComponentModel.ISupportInitialize)(this.YaziciDGV)).EndInit();
             this.ResumeLayout(false);

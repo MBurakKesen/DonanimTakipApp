@@ -45,5 +45,15 @@ namespace Console
         {
 
         }
+
+        private void eklemeBtn_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void silBtn_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

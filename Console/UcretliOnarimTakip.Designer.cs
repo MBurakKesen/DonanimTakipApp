@@ -256,7 +256,7 @@
             this.Controls.Add(this.GeriBtn);
             this.Name = "UcretliOnarimTakip";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "UcretliOnarimTakip";
+            this.Text = "Ucretli Onarim Takip";
             this.TransparencyKey = System.Drawing.Color.Teal;
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.UcretliOnarimTakip_Load);

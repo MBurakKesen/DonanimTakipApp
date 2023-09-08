@@ -47,6 +47,8 @@ namespace Console
         private void IceriAktarBtn_Click(object sender, EventArgs e)
         {
             ImportExcel.AddYaziciVeSeriNumaralariDb(ImportExcel.readExcelForYaziciVeSeriNumaralari());
+            this.Close();
+            new YaziciVeSeriNumara().Show(); 
         }
 
         private void DısarıAktarBtn_Click(object sender, EventArgs e)

@@ -42,6 +42,8 @@ namespace Console
         private void IceriAktarBtn_Click(object sender, EventArgs e)
         {
             ImportExcel.AddYaziciDB(ImportExcel.readExcelForYazici());
+            this.Close();
+            new UrovoEnvanter().Show();
         }
 
         private void DisariAktarBtn_Click(object sender, EventArgs e)

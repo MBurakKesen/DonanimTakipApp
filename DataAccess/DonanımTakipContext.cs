@@ -23,6 +23,7 @@ namespace DataAccess
         public DbSet<YaziciVeSeriNumaralari> YaziciVeSeriNumaralaris { get; set;}
         public DbSet<Onarim> Onarims { get; set;}
         public DbSet<Otopark> Otoparks { get; set;}
+        public DbSet<UrovoOnarim> UrovoOnarims { get; set;}
        
     }
 }

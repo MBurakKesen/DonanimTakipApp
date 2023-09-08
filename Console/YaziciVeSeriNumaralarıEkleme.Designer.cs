@@ -118,7 +118,7 @@
             this.MinimizeBox = false;
             this.Name = "YaziciVeSeriNumaralarıEkleme";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "EKLEME SAYFASI";
+            this.Text = "Yazıcı Ekle";
             this.TransparencyKey = System.Drawing.Color.Green;
             this.Load += new System.EventHandler(this.YaziciVeSeriNumaralarıEkleme_Load);
             this.ResumeLayout(false);
